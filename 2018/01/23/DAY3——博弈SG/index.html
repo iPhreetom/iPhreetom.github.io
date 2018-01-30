@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="计算几何基础," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="iPhreetom" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="组合博弈：">
+<meta name="keywords" content="计算几何基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DAY3组合博弈">
+<meta property="og:url" content="http://iPhreetom.com/2018/01/23/DAY3——博弈SG/index.html">
+<meta property="og:site_name" content="iPhreetom">
+<meta property="og:description" content="组合博弈：">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-25T09:07:06.982Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DAY3组合博弈">
+<meta name="twitter:description" content="组合博弈：">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://iPhreetom.com/2018/01/23/DAY3——博弈SG/"/>
+
+
+
+
+
+  <title>DAY3组合博弈 | iPhreetom</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iPhreetom</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">追逐阳光与希望</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2018/01/23/DAY3——博弈SG/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iPhreetom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iPhreetom">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">DAY3组合博弈</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T22:32:53+08:00">
+                2018-01-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/" itemprop="url" rel="index">
+                    <span itemprop="name">ACM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>组合博弈：<br><a id="more"></a></p>
+<p>拿石子的游戏属于：NIM游戏<br>这类游戏有以下结论·</p>
+<ul>
+<li><p>[ ] 通过异或和</p>
+<ul>
+<li>状态Nim</li>
+<li>Nim和尾零为先手必败</li>
+<li>Nim和不为零 先手必胜</li>
+</ul>
+</li>
+<li><p>[ ] Nim和 -&gt; SG函数 等价Nim数<br>转换子博弈-难点<br>求子博弈的nim数<br>异或起来<br>得到整个状态的等价 Nim数</p>
+</li>
+<li><p>[ ] ——Sprague-Grundy</p>
+</li>
+<li><p>[ ] 无偏博弈：<br>  完全信息<br>  轮流行动，两名玩家<br>  明确的规则<br>  确定的状态和行动<br>  在有限步中结束</p>
+</li>
+<li><p>[ ] 无偏博弈可以转换为Nim</p>
+</li>
+</ul>
+<p>先手必胜状态</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 解题思路<ul>
+<li>判断是否是无偏博弈（对于双方，最优解相同，象棋就不是）</li>
+</ul>
+</li>
+</ul>
+<p>没有结论<br>打表找规律</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 两个结论<ul>
+<li>Nim函数 就是 棋子的数量</li>
+</ul>
+</li>
+</ul>
+<p>威佐夫博奕<br>一堆随便拿<br>或者两堆中一起拿同样多的个数</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 直接套公式和结论<br>  第i个后手必胜的两堆数分别是： s（一个前面没有出现过的自然数） ， s+i<br>  第k个<br>  n = k * phi<br>  m = n + k;</li>
+</ul>
+<p>奇异局势就是后手必胜</p>
+<p>没有直观的策略<br>就利用SG<br>用N^2法去打表找规律<br>打表，就是用暴力计算的模式，计算出前面的答案</p>
+<p>D——经典用法</p>
+<p>其他的现在不会，网上没有题解</p>
+<p>今日计划</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 打表找规律</li>
+<li style="list-style: none"><input type="checkbox"> Nimp[ SG函数的写法</li>
+<li style="list-style: none"><input type="checkbox"> 威尔夫博弈的写法</li>
+</ul>
+<p>看挑战算法程序设计竞赛比看BLOG去入门，容易得多</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="A——ENimEN"><a href="#A——ENimEN" class="headerlink" title="A——ENimEN"></a>A——ENimEN</h3><p>规则：<br>    跟着拿，或者自由拿（后手的意义）</p>
+<h3 id="B——Playing-with-stones"><a href="#B——Playing-with-stones" class="headerlink" title="B——Playing with stones"></a>B——Playing with stones</h3><p>在这道题上<br>感觉到这道题超过我理解能力的地方很很多<br>需要记录下自己的逻辑链</p>
+<p>理解的方式其实只有一个<br>慢下来<br>慢到我们都能够理解<br>我现在是一个愚蠢的家伙<br>只好投入更多的时间<br>试图理解，那些现在属于他与她的事物</p>
+<ul>
+<li>PWS<ul>
+<li>打表<ul>
+<li>打表的定义<ul>
+<li>暴力算法算出前面的答案（数据多）</li>
+<li>手算前面的答案（数据少，而且难）</li>
+</ul>
+</li>
+<li>观察SG函数，得到规律<ul>
+<li>SG函数定义<ul>
+<li style="list-style: none"><input type="checkbox" checked> 已知：<ul>
+<li>SG函数 表示方法是 sg[i]</li>
+<li>SG函数值 是某堆的物件数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>SG函数</p>
+<ul>
+<li>源起<ul>
+<li>给定一个 有向无环图 和 一个起始位置顶点上的一枚棋子 ， 两名血手交替的对这枚棋子沿边进行移动，无法移动者判负。这个游戏，可以认为是所有impartial combinatorial games的抽象模型。 —— 百度百科</li>
+</ul>
+</li>
+<li>具体内容：<ul>
+<li>每个局面都看作一个顶点</li>
+<li>定义mex函数<ul>
+<li>集合类型的函数，接受一个集合变量，返回一个集合变量</li>
+<li>返回 最小的不属于这个集合的非负整数</li>
+<li>sg[x] = mex(sg[x+1])</li>
+</ul>
+</li>
+<li>对于所有terminal position所对应的顶点,其sg函数值定为0</li>
+<li>则对于一个terminal position 的所有前驱都有sg函数值不为0,</li>
+<li>对于一个sg函数值不为0的顶点，必定存在一个后继的顶点满足sg函数值为0</li>
+</ul>
+</li>
+<li>SG的意义<ul>
+<li>类比Nim游戏<ul>
+<li>Nim游戏<ul>
+<li>拿石子的游戏<br>-</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>异或运算</p>
+<ul>
+<li>转换成二进制后，进行（相异为1）（相同为0）的运算，得到新的结果</li>
+</ul>
+</li>
+</ul>
+<p>SG的代码实现：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//f[N]:可改变当前状态的方式，N为方式的种类，f[N]要在getSG之前先预处理</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//SG[]:0~n的SG函数值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//S[]:为x后继状态的集合，</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 后继状态 ： 剩下的石子数 算出的 SG函数值（最小石子数）</span></span><br><span class="line"><span class="comment">// SG[x] ： 石子数为x时，所有  能到达的  后继状态（递归到结束）中没有出现过的</span></span><br><span class="line"><span class="comment">// 意味着，如果状态不能够</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> f[N],SG[MAXN],S[MAXN];</span><br><span class="line"><span class="function"><span class="keyword">void</span>  <span class="title">getSG</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="built_in">memset</span>(SG,<span class="number">0</span>,<span class="keyword">sizeof</span>(SG));</span><br><span class="line">    <span class="comment">//因为SG[0]始终等于0，所以i从1开始</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">1</span>; i &lt;= n; i++)&#123;  <span class="comment">// 从1开始计算所有sg的值</span></span><br><span class="line">        <span class="comment">//每一次都要将上一状态 的 后继集合 重置</span></span><br><span class="line">        <span class="built_in">memset</span>(S,<span class="number">0</span>,<span class="keyword">sizeof</span>(S));  <span class="comment">//S保存的是后继状态的函数值，之后要从这里找未出现的最小自然数</span></span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>; f[j] &lt;= i &amp;&amp; j &lt;= N; j++)  <span class="comment">// 计算所有 后继状态,下标表示的就是  自然数（类似桶）</span></span><br><span class="line">            S[ SG[i-f[j]] ] = <span class="literal">true</span>;  <span class="comment">//将后继状态的SG函数值进行标记</span></span><br><span class="line">            				<span class="comment">//当现有的i（石子数），减去使用不同方法后，后继状态</span></span><br><span class="line">            				<span class="comment">//i = 1时，可以取走1 - f&#123;1&#125;个石子，剩余&#123;0&#125;个，所以 SG[1] = mex&#123; SG[0] &#125;= mex&#123;0&#125; = 1;</span></span><br><span class="line">            				<span class="comment">//当 SG[X] 为0时，说明取完，则为最终状态，S[1] = true</span></span><br><span class="line">            				<span class="comment">//当 SG[x]</span></span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>;;j++) <span class="keyword">if</span>(!S[j])&#123;   <span class="comment">//查询当前后继状态SG值中最小的非零值</span></span><br><span class="line">            SG[i] = j;	<span class="comment">// 历遍S，寻找最小的自然数 —— 如何求出所有出现过的自然数呢</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/计算几何基础/" rel="tag"># 计算几何基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/23/DAY4—— ~~树与树的分治~~/" rel="next" title="DAY4——数据结构基础">
+                <i class="fa fa-chevron-left"></i> DAY4——数据结构基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/23/Final/" rel="prev" title="Final">
+                Final <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="iPhreetom" />
+            
+              <p class="site-author-name" itemprop="name">iPhreetom</p>
+              <p class="site-description motion-element" itemprop="description">ACMer·Bigdate·Html·Painter</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.</span> <span class="nav-text">题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A——ENimEN"><span class="nav-number">1.1.</span> <span class="nav-text">A——ENimEN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B——Playing-with-stones"><span class="nav-number">1.2.</span> <span class="nav-text">B——Playing with stones</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <a class="theme-link" href="/about/index.html">
+  <span class="author" itemprop="copyrightHolder">iPhreetom</span>
+</a>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

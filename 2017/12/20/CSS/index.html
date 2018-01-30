@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="CSS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="iPhreetom" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="了解CSS">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS基础知识">
+<meta property="og:url" content="http://iPhreetom.com/2017/12/20/CSS/index.html">
+<meta property="og:site_name" content="iPhreetom">
+<meta property="og:description" content="了解CSS">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-20T10:13:53.471Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS基础知识">
+<meta name="twitter:description" content="了解CSS">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://iPhreetom.com/2017/12/20/CSS/"/>
+
+
+
+
+
+  <title>CSS基础知识 | iPhreetom</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iPhreetom</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">追逐阳光与希望</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2017/12/20/CSS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iPhreetom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iPhreetom">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS基础知识</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-20T00:00:00+08:00">
+                2017-12-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/现代前端魔法/" itemprop="url" rel="index">
+                    <span itemprop="name">现代前端魔法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>了解CSS<br><a id="more"></a></p>
+<h3 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h3><p>选择器 属性 值</p>
+<h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><p>&nbsp;同时多个使用多个选择器    ：<br>&nbsp;&nbsp;使用 “，”分隔<br>&nbsp;派生选择器    ：<br>&nbsp;&nbsp;子关系；<br>&nbsp;&nbsp;单重（严格）子关系（&gt;）；<br>&nbsp;&nbsp;兄弟关系(+);<br>&nbsp;id<br>&nbsp;&nbsp;# 作为标识符<br>&nbsp;&nbsp;通常作为派生选择器　#itname p {}<br>&nbsp;class<br>&nbsp;&nbsp;.　作为标识符(.itname)<br>&nbsp;&nbsp;可以用做派生选择</p>
+<h4 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h4><p>&nbsp;title<br>&nbsp;&nbsp;[title]<br>&nbsp;&nbsp;[title = itname]<br>&nbsp;&nbsp;[title ~= partname]<br>&nbsp;&nbsp;在没有任何值的时候，对于所有含title的句子都渲染</p>
+<h2 id="css-learner"><a href="#css-learner" class="headerlink" title="css learner"></a>css learner</h2><h3 id="Working-with-Text"><a href="#Working-with-Text" class="headerlink" title="Working with Text"></a>Working with Text</h3><h4 id="font"><a href="#font" class="headerlink" title="font"></a>font</h4><p>&nbsp;font-family:<br>&nbsp;&nbsp;type of font<br>&nbsp;font-size:<br>&nbsp;&nbsp;1em == 16px<br>&nbsp;&nbsp;notice: try different combinations of font-size and page zooming<br>&nbsp;font-style:<br>&nbsp;&nbsp;italic（寻找是否该字体存在斜体）<br>&nbsp;&nbsp;normal (such as using in “strong”)<br>&nbsp;&nbsp;oblique (强制渲染成斜体)<br>&nbsp;font-weight:<br>&nbsp;&nbsp;bold<br>&nbsp;&nbsp;bolder(感觉和bold没有区别)<br>&nbsp;&nbsp;lighter<br>&nbsp;&nbsp;number from 100 to 900<br>&nbsp;font-variant:<br>&nbsp;&nbsp;normal<br>&nbsp;&nbsp;small-caps(奇妙的变化：首先让原来的大写字母突出放大，再让小写字母变成大写)<br>&nbsp;&nbsp;inherit(继承父元素的值)</p>
+<h4 id="color"><a href="#color" class="headerlink" title="color"></a>color</h4><p>&nbsp;rgb（不会用）<br>&nbsp;#0F(不会用×２)<br>&nbsp;使用名字</p>
+<h4 id="text-align"><a href="#text-align" class="headerlink" title="text-align:"></a>text-align:</h4><p>&nbsp;left<br>&nbsp;right<br>&nbsp;center<br>&nbsp;justify(实现两端对齐文本)</p>
+<h4 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h4><p>&nbsp;table-tr-td:<br>&nbsp;&nbsp;top<br>&nbsp;&nbsp;middle<br>&nbsp;&nbsp;bottom<br>&nbsp;in one line<br>&nbsp;&nbsp;baseline<br>&nbsp;&nbsp;sub<br>&nbsp;&nbsp;super<br>&nbsp;&nbsp;10px or -10px(px , pt , cm)<br>&nbsp;div<br>&nbsp;&nbsp;height<br>&nbsp;&nbsp;width<br>&nbsp;&nbsp;background-color<br>&nbsp;&nbsp;inline-table<br>&nbsp;&nbsp;div:<br>&nbsp;&nbsp;&nbsp;table-cell<br>&nbsp;&nbsp;&nbsp;vertical-align:middle or else</p>
+<h4 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a>text-decoration</h4><p>&nbsp;none<br>&nbsp;inherit<br>&nbsp;overline<br>&nbsp;underline<br>&nbsp;line-through</p>
+<h4 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h4><p>&nbsp;60px also -60px<br>&nbsp;inherit</p>
+<h4 id="text-shadow"><a href="#text-shadow" class="headerlink" title="text-shadow"></a>text-shadow</h4><p>&nbsp;Xpx Ypx blur(&gt;=0) color(or default same color)</p>
+<h4 id="text-transform"><a href="#text-transform" class="headerlink" title="text-transform"></a>text-transform</h4><p>&nbsp;capitalize (首字母大写)<br>&nbsp;uppercase<br>&nbsp;lowercase</p>
+<h4 id="letter-spacing"><a href="#letter-spacing" class="headerlink" title="letter-spacing"></a>letter-spacing</h4><p>&nbsp;normal<br>&nbsp;length (can also be negative)<br>&nbsp;inherit</p>
+<h4 id="word-spacing"><a href="#word-spacing" class="headerlink" title="word-spacing"></a>word-spacing</h4><p>&nbsp;normal<br>&nbsp;length<br>&nbsp;inherit</p>
+<h4 id="white-space"><a href="#white-space" class="headerlink" title="white-space"></a>white-space</h4><p>&nbsp;normal （不处理换行符，必要时换行，空格不缩减）<br>&nbsp;inherit<br>&nbsp;nowrap (禁止换行，缩减空格)<br>&nbsp;pre-wrap (不处理换行符，必要时换行，缩减所有空格)<br>&nbsp;pre-line （处理换行符，缩减空格）<br>&nbsp;pre （处理换行符，空格不缩减）</p>
+<h4 id=""><a href="#" class="headerlink" title=" "></a> </h4><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><p>&nbsp;property<br>&nbsp;&nbsp;height<br>&nbsp;&nbsp;width<br>&nbsp;&nbsp;bolder: 1px solid blue;<br>&nbsp;tr 行<br>&nbsp;th , td 列<br>&nbsp;&nbsp;th 自动加粗，td普通<br>&nbsp;&nbsp;</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/10/vscode——gold/" rel="next" title="CODEVS-Gold贪心">
+                <i class="fa fa-chevron-left"></i> CODEVS-Gold贪心
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/28/ACMer——动态规划/" rel="prev" title="ACMer——动态规划">
+                ACMer——动态规划 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="iPhreetom" />
+            
+              <p class="site-author-name" itemprop="name">iPhreetom</p>
+              <p class="site-description motion-element" itemprop="description">ACMer·Bigdate·Html·Painter</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#写法"><span class="nav-number">1.</span> <span class="nav-text">写法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器"><span class="nav-number">2.</span> <span class="nav-text">选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性选择器"><span class="nav-number">2.1.</span> <span class="nav-text">属性选择器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-learner"><span class="nav-number"></span> <span class="nav-text">css learner</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Working-with-Text"><span class="nav-number">1.</span> <span class="nav-text">Working with Text</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#font"><span class="nav-number">1.1.</span> <span class="nav-text">font</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#color"><span class="nav-number">1.2.</span> <span class="nav-text">color</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#text-align"><span class="nav-number">1.3.</span> <span class="nav-text">text-align:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#vertical-align"><span class="nav-number">1.4.</span> <span class="nav-text">vertical-align</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#text-decoration"><span class="nav-number">1.5.</span> <span class="nav-text">text-decoration</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#text-indent"><span class="nav-number">1.6.</span> <span class="nav-text">text-indent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#text-shadow"><span class="nav-number">1.7.</span> <span class="nav-text">text-shadow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#text-transform"><span class="nav-number">1.8.</span> <span class="nav-text">text-transform</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#letter-spacing"><span class="nav-number">1.9.</span> <span class="nav-text">letter-spacing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#word-spacing"><span class="nav-number">1.10.</span> <span class="nav-text">word-spacing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#white-space"><span class="nav-number">1.11.</span> <span class="nav-text">white-space</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">1.12.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#table"><span class="nav-number">2.</span> <span class="nav-text">table</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <a class="theme-link" href="/about/index.html">
+  <span class="author" itemprop="copyrightHolder">iPhreetom</span>
+</a>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

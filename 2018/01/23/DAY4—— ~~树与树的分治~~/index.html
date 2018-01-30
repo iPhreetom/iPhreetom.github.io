@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="寒训," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="iPhreetom" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="树的分治数据结构： 树、堆">
+<meta name="keywords" content="寒训">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DAY4——数据结构基础">
+<meta property="og:url" content="http://iPhreetom.com/2018/01/23/DAY4—— ~~树与树的分治~~/index.html">
+<meta property="og:site_name" content="iPhreetom">
+<meta property="og:description" content="树的分治数据结构： 树、堆">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-25T08:55:34.022Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DAY4——数据结构基础">
+<meta name="twitter:description" content="树的分治数据结构： 树、堆">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://iPhreetom.com/2018/01/23/DAY4—— ~~树与树的分治~~/"/>
+
+
+
+
+
+  <title>DAY4——数据结构基础 | iPhreetom</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iPhreetom</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">追逐阳光与希望</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2018/01/23/DAY4—— ~~树与树的分治~~/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iPhreetom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iPhreetom">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">DAY4——数据结构基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T22:32:53+08:00">
+                2018-01-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/" itemprop="url" rel="index">
+                    <span itemprop="name">ACM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><del>树的分治</del><br>数据结构： 树、堆<br><a id="more"></a></p>
+<h1 id="树和二叉树"><a href="#树和二叉树" class="headerlink" title="树和二叉树"></a>树和二叉树</h1><ul>
+<li>基础知识<ul>
+<li>利用数组建立二叉树</li>
+<li>利用结构体建立二叉树<ul>
+<li>二叉树的三种历遍方式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="优先队列和堆"><a href="#优先队列和堆" class="headerlink" title="优先队列和堆"></a>优先队列和堆</h1><h2 id="优先队列-queue-proiority-queue"><a href="#优先队列-queue-proiority-queue" class="headerlink" title="优先队列(#queue : proiority_queue)"></a>优先队列(#queue : proiority_queue)</h2><pre><code>- 操作：
+    - 能插入一个数值
+    - 取出最小（最大）的数值（取得并删除）
+- 实现：
+    - 二叉堆实现法
+</code></pre><h2 id="二叉堆"><a href="#二叉堆" class="headerlink" title="二叉堆"></a>二叉堆</h2><pre><code>- 性质：
+    - 儿子的值 一定大于等于 父亲的值
+    - 要求树的节点从上到下，从左到右顺序紧凑排列
+- 操作：
+    - 能插入一个数值
+    - 取出最小（最大）的数值（取得并删除）
+- 实现：
+    - 利用数组表示二叉树
+    - 左儿子的编号 是 自己编号×2+1
+    - 右儿子的编号 是 自己编号×2+2
+- 用途：
+    - 实现优先队列：
+        - 插入一个数值
+            - i = size++;
+            - dad = (i-1)/2
+            - 不断向上提升，直到其父亲节点比它小为止
+                - if(heap[dad] &lt;= x )break
+                - else heap[i] = heap[dad] ，i=dad //将父亲节点放下来，而插入值储实际存在变量x中
+            - 真正插入数组
+                - heap[i] = x
+        - 取出最小值（实际上就是更新一次堆）
+            - 用变量ret保存最小值
+            - 堆尾的值赋给根，并且用--size，表示删除
+            - 从根开始向下交换
+                - 比较儿子的值，贪心找小的一个
+                - 如果 儿子都 大于该值，就结束
+                - 否则把儿子提上来
+                - 返回ret
+</code></pre><h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><pre><code>- 性质
+    - 左子树的节点都比自己小
+    - 右子树的节点都比自己大
+- 操作：
+    - 插入一个数值
+        - 通过 询问（性质） 找到对应位置，插入
+    - 查询是否包含某个数值
+    - 删除某个数值
+        - 需要删除的节点没有左儿子，那么就把右儿子提上去
+        - 需要删除的节点的左儿子没有右儿子，呢么就把左儿子提上去
+        - 两种特列不满足，就把左儿子中最大的节点提到需要删除的节点上
+- 实现：
+    - 用结构体实现
+</code></pre><h2 id="二叉堆代码实现："><a href="#二叉堆代码实现：" class="headerlink" title="二叉堆代码实现："></a>二叉堆代码实现：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> heap[maxn],sz;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = sz++;</span><br><span class="line">	<span class="keyword">int</span> p = (i<span class="number">-1</span>)/<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">while</span>(i&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(heap[p] &lt;= x)<span class="keyword">break</span>;</span><br><span class="line">		heap[i] = heap[p];</span><br><span class="line">		i = p;</span><br><span class="line">	&#125;</span><br><span class="line">	heap[i] = x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = heap[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">int</span> x = heap[--sz];</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(i*<span class="number">2</span>+<span class="number">1</span> &lt; sz)&#123;</span><br><span class="line">		<span class="keyword">int</span> a = i*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">int</span> b = i*<span class="number">2</span>+<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(b&lt;sz &amp;&amp; heap[b] &lt; heap[a])a = b;</span><br><span class="line">		<span class="keyword">if</span>(heap[a] &lt; heap[i])heap[i] = heap[a] , i = a;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	heap[i] = x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="对应习题："><a href="#对应习题：" class="headerlink" title="对应习题："></a>对应习题：</h2><p>POJ 2431 Expedition<br>POJ 3253 Fence Repair</p>
+<h2 id="补习："><a href="#补习：" class="headerlink" title="补习："></a>补习：</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 用O(n)求得 最小值和第二小值<ul>
+<li>mii1 和 mii2</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 使用priority_queue实现堆的方法，push(),pop(),top()<ul>
+<li>默认top(),pop()取出和删除最小值</li>
+<li>取出最大值的方法：priority_queue&lt; int,vector&lt; int&gt;,greater&lt; int&gt; &gt;<ul>
+<li>greater&lt;&gt; and less&lt;&gt;属于 #functional</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><h3 id="POJ-2431-Expedition"><a href="#POJ-2431-Expedition" class="headerlink" title="POJ 2431 Expedition"></a>POJ 2431 Expedition</h3><p>移动方法：不断移动到一个新的加油站（把终点也当作一个加油站，简易计算）<br>优先队列：当没有油时，加上队列中最大的油桶（取出最大值操作）</p>
+<h3 id="POJ-3253-Fence-Repair"><a href="#POJ-3253-Fence-Repair" class="headerlink" title="POJ 3253 Fence Repair"></a>POJ 3253 Fence Repair</h3><p>最小代价：取出最小的两个物件合并</p>
+<h1 id="树上的分治"><a href="#树上的分治" class="headerlink" title="树上的分治"></a><del>树上的分治</del></h1><ul>
+<li>点分治<ul>
+<li>选点的方法不同，导致每个点被历遍次数不同</li>
+<li>选点的方法；<ul>
+<li>寻找“重心”：使得 最大值 最小</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>边分治<ul>
+<li>xxx</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/寒训/" rel="tag"># 寒训</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/22/DAY2 —— 计算几何基础/" rel="next" title="DAY2 —— 计算几何基础">
+                <i class="fa fa-chevron-left"></i> DAY2 —— 计算几何基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/23/DAY3——博弈SG/" rel="prev" title="DAY3组合博弈">
+                DAY3组合博弈 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="iPhreetom" />
+            
+              <p class="site-author-name" itemprop="name">iPhreetom</p>
+              <p class="site-description motion-element" itemprop="description">ACMer·Bigdate·Html·Painter</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#树和二叉树"><span class="nav-number">1.</span> <span class="nav-text">树和二叉树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优先队列和堆"><span class="nav-number">2.</span> <span class="nav-text">优先队列和堆</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优先队列-queue-proiority-queue"><span class="nav-number">2.1.</span> <span class="nav-text">优先队列(#queue : proiority_queue)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉堆"><span class="nav-number">2.2.</span> <span class="nav-text">二叉堆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉搜索树"><span class="nav-number">2.3.</span> <span class="nav-text">二叉搜索树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉堆代码实现："><span class="nav-number">2.4.</span> <span class="nav-text">二叉堆代码实现：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应习题："><span class="nav-number">2.5.</span> <span class="nav-text">对应习题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补习："><span class="nav-number">2.6.</span> <span class="nav-text">补习：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解："><span class="nav-number">2.7.</span> <span class="nav-text">题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POJ-2431-Expedition"><span class="nav-number">2.7.1.</span> <span class="nav-text">POJ 2431 Expedition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POJ-3253-Fence-Repair"><span class="nav-number">2.7.2.</span> <span class="nav-text">POJ 3253 Fence Repair</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#树上的分治"><span class="nav-number">3.</span> <span class="nav-text">树上的分治</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <a class="theme-link" href="/about/index.html">
+  <span class="author" itemprop="copyrightHolder">iPhreetom</span>
+</a>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

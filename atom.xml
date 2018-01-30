@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>iPhreetom</title>
+  
+  <subtitle>追逐阳光与希望</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://iPhreetom.com/"/>
+  <updated>2018-01-28T02:30:44.590Z</updated>
+  <id>http://iPhreetom.com/</id>
+  
+  <author>
+    <name>iPhreetom</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>结语与开端</title>
+    <link href="http://iPhreetom.com/2018/01/26/%E7%BB%93%E8%AF%AD%E4%B8%8E%E5%BC%80%E7%AB%AF/"/>
+    <id>http://iPhreetom.com/2018/01/26/结语与开端/</id>
+    <published>2018-01-26T15:56:01.000Z</published>
+    <updated>2018-01-28T02:30:44.590Z</updated>
+    
+    <content type="html"><![CDATA[<p>追寻智慧与自由<br><a id="more"></a></p><p>现在，这一刻，23:58分<br>距离寒假的正式开始还有两分钟<br>我想<br>开始吧<br>奔跑吧<br>带着洋溢的希望与深藏的幻想</p><p>能够在假期前一天和DIM愉快地在“味千拉面”交流这个学期的所得，与下个学期的展望……果然DIM太强啦，我太菜啦。<br><!-- 羡慕DIM和VOLgo --><br>所以这个假期要做的事情其实很简单：<br>拥有前行的勇气<br>做好该做的事情<br>1、ACM算法竞赛<br>2、下个学期的课程<br>3、实验室的——大数据管理<br>Point：集中精力学好英语</p><p>尝试的方法如下</p><ul><li style="list-style: none"><input type="checkbox" checked> 慢于理解，沉着与痴迷</li><li style="list-style: none"><input type="checkbox" checked> 做纸面笔记，并且试着同步到Blog上（blog的意义参见“Byvoid的BAT面试报告”）</li><li style="list-style: none"><input type="checkbox"> 定好时间计划，尽力完成时间计划内的内容，留出时间，慢慢探索（凭着兴趣研究自己所学的东西）</li><li style="list-style: none"><input type="checkbox" checked> 学习新的学习方法</li><li style="list-style: none"><input type="checkbox" checked> 体验更新极限的快感</li></ul><p>明天早上开始先大数据恶补计划<br>而后等待学姐的通知<br>由实验室的进度调整我关于其他两者的计划</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;追寻智慧与自由&lt;br&gt;
+    
+    </summary>
+    
+      <category term="iPhreetom&#39;s world" scheme="http://iPhreetom.com/categories/iPhreetom-s-world/"/>
+    
+    
+      <category term="开端" scheme="http://iPhreetom.com/tags/%E5%BC%80%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>彼岸的生活</title>
+    <link href="http://iPhreetom.com/2018/01/26/%E5%BD%BC%E5%B2%B8%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+    <id>http://iPhreetom.com/2018/01/26/彼岸的生活/</id>
+    <published>2018-01-26T15:56:01.000Z</published>
+    <updated>2018-01-30T07:09:05.221Z</updated>
+    
+    <content type="html"><![CDATA[<p>在搜索引擎下，如鱼得水<br><a id="more"></a></p><p>在知乎听人们讲述Spark的起源与功能，享受其通俗易懂的比喻。<br>在Baidu和google上寻觅教程，不断挑选与尝试。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在搜索引擎下，如鱼得水&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Bigdate" scheme="http://iPhreetom.com/categories/Bigdate/"/>
+    
+    
+      <category term="Bigdate" scheme="http://iPhreetom.com/tags/Bigdate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>属于Spark的一日</title>
+    <link href="http://iPhreetom.com/2018/01/26/%E5%B1%9E%E4%BA%8ESpark%E7%9A%84%E4%B8%80%E6%97%A5/"/>
+    <id>http://iPhreetom.com/2018/01/26/属于Spark的一日/</id>
+    <published>2018-01-26T15:56:01.000Z</published>
+    <updated>2018-01-30T07:15:23.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>Spark 你好，工作能力，你好<br><a id="more"></a></p><h1 id="Ubantu下环境搭建"><a href="#Ubantu下环境搭建" class="headerlink" title="Ubantu下环境搭建"></a>Ubantu下环境搭建</h1><p>&emsp;&emsp;安装JAVA ， 添加环境变量<br>&emsp;&emsp;安装scala<br>&emsp;&emsp;安装IDE<br>&emsp;&emsp;安装Git</p><h2 id="分布式模拟"><a href="#分布式模拟" class="headerlink" title="分布式模拟"></a>分布式模拟</h2><p>&emsp;&emsp;Ubantu的安装包<br>&emsp;&emsp;安装多台linux本地模拟分布式</p><h2 id="遇到的困难以及解决方案"><a href="#遇到的困难以及解决方案" class="headerlink" title="遇到的困难以及解决方案:"></a>遇到的困难以及解决方案:</h2><p>&emsp;&emsp;linux下软件安装<br>&emsp;&emsp;&emsp;&emsp;npm<br>&emsp;&emsp;&emsp;&emsp;强行bashrc<br>&emsp;&emsp;打开bashrc配置环境<br>&emsp;&emsp;&emsp;&emsp;使用自带的gedit编辑器<br>&emsp;&emsp;&emsp;&emsp;gedit ~/.bashrc<br>&emsp;&emsp;然而并不能成功安装</p><h1 id="使用onenote"><a href="#使用onenote" class="headerlink" title="使用onenote"></a>使用onenote</h1><p>&emsp;&emsp;自动开头大写的困扰<br>&emsp;&emsp;&emsp;&emsp;设置中取消<br>&emsp;&emsp;纠正拼写的困扰<br>&emsp;&emsp;&emsp;&emsp;设置中取消</p><h1 id="Windows-下安装scala与spark"><a href="#Windows-下安装scala与spark" class="headerlink" title="Windows 下安装scala与spark"></a>Windows 下安装scala与spark</h1><p>安装Cygwin模拟linux环境<br>&emsp;&emsp;遇到的问题：<br>&emsp;&emsp;&emsp;&emsp;桌面的图标没法正确打开<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;解决：改变了图标的定位<br>&emsp;&emsp;&emsp;&emsp;ssh-host-config -y不能正确使用<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PDF中的的-y前少了空格<br>&emsp;&emsp;&emsp;&emsp;ssh-host-config-y不能正确安装<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;使用管理员身份打开<br>&emsp;&emsp;&emsp;&emsp;ssh版本查看失败<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PDF疯狂吃空格</p><p>寻找JAVA之旅<br>&emsp;&emsp;遇到的问题：<br>&emsp;&emsp;&emsp;&emsp;因为JAVA是许久前安装的，所以不知道具体的位置，通过网络上的配置图片，发现，在program目录下，遂寻得<br>&emsp;&emsp;想法：<br>&emsp;&emsp;&emsp;&emsp;以后直接在根目录下搜索JAVA即可<br>&emsp;&emsp;&emsp;&emsp;或者搜索JAVA/bin</p><p>安装spark之旅<br>&emsp;&emsp;遇到的问题：<br>&emsp;&emsp;&emsp;&emsp;安装网络上的教程走了不少弯路，他们的教程都比较老旧，和新版本安装包下的文件结构不同<br>&emsp;&emsp;解决方案：<br>&emsp;&emsp;&emsp;&emsp;找到最直接的目的“安装spark”解决了疑惑，通过直接运行spark-shell.cmd完成了spark的安装</p><p>下午：<br>《二十岁》人们来回奔走的人生</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Spark 你好，工作能力，你好&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IT" scheme="http://iPhreetom.com/categories/IT/"/>
+    
+    
+      <category term="大数据" scheme="http://iPhreetom.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+      <category term="工作" scheme="http://iPhreetom.com/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="未来道路" scheme="http://iPhreetom.com/tags/%E6%9C%AA%E6%9D%A5%E9%81%93%E8%B7%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY6——树链剖分 -&gt; 复习前面所学</title>
+    <link href="http://iPhreetom.com/2018/01/25/DAY6%E2%80%94%E2%80%94%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86%E2%80%94%E2%80%94%20%200%20%E5%A4%8D%E4%B9%A0%E5%89%8D%E9%9D%A2%E6%89%80%E5%AD%A6/"/>
+    <id>http://iPhreetom.com/2018/01/25/DAY6——树链剖分——  0 复习前面所学/</id>
+    <published>2018-01-24T16:00:01.000Z</published>
+    <updated>2018-01-26T16:22:04.996Z</updated>
+    
+    <content type="html"><![CDATA[<p>进入新世界<br><a id="more"></a></p><h2 id="醒来在清晨"><a href="#醒来在清晨" class="headerlink" title="醒来在清晨"></a>醒来在清晨</h2><p>一早起来看到陈旸的twitter，ACM 数学 前端框架 画画（设计）<br>如此畅快淋漓的生活<br>我似乎也在争取拥有<br>去用智慧和能力，以全新的姿态活在这个世界上<br>《微习惯》中提到过一个新奇的思路：去思索一个事物的对立面，截然相反的一面。以此开拓你的思维<br>比如：无所事事的一天，早上10点起床，开始看视屏，刷QQ空间，玩游戏，然后不吃饭，等到晚上，草草吃一顿，然后继续浪到深夜。<br>它的对立面是：有着明确的目标，在早上6点起床（不允许自己熬夜刷，但是又要保证足够多的时间去学习），开始自己的计划，或者迫于生活的压力，或者因为梦中的美好<br>开始学习，开始思考<br>开始改变<br>我的大学就是这样一种状态<br>我知道世界上有很多很多我将来能够做到的事情，<br>我想要得到它们<br>让梦化为现实</p><h2 id="流浪于午后"><a href="#流浪于午后" class="headerlink" title="流浪于午后"></a>流浪于午后</h2><p>昨日开始从头开始看《挑战算法程序设计竞赛》<br>回头一看，发现自己真的是在学基础知识（ＢＦＳ，ＤＦＳ，ＤＰ）<br>在今天早上和中午看到了ＤＰ后，<br>突如其来的又一场，网络神游，却让我猛然惊醒<br>如果说中午前，昨日的Ｂｙｖｏｉｄ的世界之旅还在我脑海回绕<br>那么下午，Ｓｕｂｌｉｍｅ的自定义设置ＧＥＴ　和　ＡＣＭ的比赛需要使用Ｃｏｄｅｂｌｏｃｋ。<br>这两件事情，引出了下午流浪的序幕。</p><h2 id="Sublime与世界"><a href="#Sublime与世界" class="headerlink" title="Ｓｕｂｌｉｍｅ与世界"></a>Ｓｕｂｌｉｍｅ与世界</h2><p>简单的一步安装插件，获得边栏，todolist，汉化界面，编译环境设定，在知乎上和blog上，这一切唾手可得。<br>通过知乎和blog去发现新世界的速度超乎我的想象，而在blog的寻找中突然又见到了Dimpurr的blog，由此开始怀疑人生……</p><h2 id="ACMer"><a href="#ACMer" class="headerlink" title="ACMer"></a>ACMer</h2><p>对于这个比赛的理解似乎有了一点儿的提升<br>区域赛<br>world final<br>在知乎上，ACMer分享着自己的体验<br>由此，我能够一观比赛的实貌<br>0、ACM的代码环境 —— Code block / Vim / Eclipse ， 以及，打印代码改错和检查<br>1、队友的配合：分为</p><ul><li>自己主写（爽快）</li><li>队友主写（自己负责，造数据和debug代码，参与思路分析，看题目）<br>2、下一步 算法 - 例题 - 刷题（套题，题组）<br>3、写blog，更新自己的想法，总结自己的所得<br>4、拿到WF的名额，争取得到属于我的荣耀</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;进入新世界&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="学算法竞赛的方法" scheme="http://iPhreetom.com/tags/%E5%AD%A6%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY5——算法学习指南</title>
+    <link href="http://iPhreetom.com/2018/01/25/DAY5%E2%80%94%E2%80%94%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    <id>http://iPhreetom.com/2018/01/25/DAY5——算法学习指南/</id>
+    <published>2018-01-24T16:00:01.000Z</published>
+    <updated>2018-01-25T08:55:34.806Z</updated>
+    
+    <content type="html"><![CDATA[<p>直观与抽象，思索与体悟<br><a id="more"></a></p><ul><li>主席树：线段树的可持久化</li><li><p>并查集：高效的元素分类</p></li><li><p>下面是经验积累</p><ul><li>静态查错：把自己的代码重新审视一遍（尤其在抄模板的时候），检查变量是否正确、“=” 与　“＝＝”</li><li>数组开得够不够大</li></ul></li></ul><ul><li>学习方案：<br>现在我去把书中的基础知识、及模板扫一遍是最高效的事情<br>如同拓扑序，学习算法也有其顺序</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;直观与抽象，思索与体悟&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="学算法竞赛的方法" scheme="http://iPhreetom.com/tags/%E5%AD%A6%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Final</title>
+    <link href="http://iPhreetom.com/2018/01/23/Final/"/>
+    <id>http://iPhreetom.com/2018/01/23/Final/</id>
+    <published>2018-01-23T14:32:53.000Z</published>
+    <updated>2018-01-26T01:30:00.711Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了自由的未来</p><a id="more"></a><p>周五打团队赛<br>我想要成为一个可靠的队友<br>配合<br>操作<br>不想要垫底<br>不想被落下</p><p>《挑战算法程序设计》感觉很棒，通过练习和自己的归纳，试着学习新的算法<br>寒假策略就这样决定了<br>推进《挑战算法程序设计》的进程</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了自由的未来&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="iphreetom&#39;s world" scheme="http://iPhreetom.com/tags/iphreetom-s-world/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY3组合博弈</title>
+    <link href="http://iPhreetom.com/2018/01/23/DAY3%E2%80%94%E2%80%94%E5%8D%9A%E5%BC%88SG/"/>
+    <id>http://iPhreetom.com/2018/01/23/DAY3——博弈SG/</id>
+    <published>2018-01-23T14:32:53.000Z</published>
+    <updated>2018-01-25T09:07:06.982Z</updated>
+    
+    <content type="html"><![CDATA[<p>组合博弈：<br><a id="more"></a></p><p>拿石子的游戏属于：NIM游戏<br>这类游戏有以下结论·</p><ul><li><p>[ ] 通过异或和</p><ul><li>状态Nim</li><li>Nim和尾零为先手必败</li><li>Nim和不为零 先手必胜</li></ul></li><li><p>[ ] Nim和 -&gt; SG函数 等价Nim数<br>转换子博弈-难点<br>求子博弈的nim数<br>异或起来<br>得到整个状态的等价 Nim数</p></li><li><p>[ ] ——Sprague-Grundy</p></li><li><p>[ ] 无偏博弈：<br>  完全信息<br>  轮流行动，两名玩家<br>  明确的规则<br>  确定的状态和行动<br>  在有限步中结束</p></li><li><p>[ ] 无偏博弈可以转换为Nim</p></li></ul><p>先手必胜状态</p><ul><li style="list-style: none"><input type="checkbox"> 解题思路<ul><li>判断是否是无偏博弈（对于双方，最优解相同，象棋就不是）</li></ul></li></ul><p>没有结论<br>打表找规律</p><ul><li style="list-style: none"><input type="checkbox"> 两个结论<ul><li>Nim函数 就是 棋子的数量</li></ul></li></ul><p>威佐夫博奕<br>一堆随便拿<br>或者两堆中一起拿同样多的个数</p><ul><li style="list-style: none"><input type="checkbox"> 直接套公式和结论<br>  第i个后手必胜的两堆数分别是： s（一个前面没有出现过的自然数） ， s+i<br>  第k个<br>  n = k * phi<br>  m = n + k;</li></ul><p>奇异局势就是后手必胜</p><p>没有直观的策略<br>就利用SG<br>用N^2法去打表找规律<br>打表，就是用暴力计算的模式，计算出前面的答案</p><p>D——经典用法</p><p>其他的现在不会，网上没有题解</p><p>今日计划</p><ul><li style="list-style: none"><input type="checkbox"> 打表找规律</li><li style="list-style: none"><input type="checkbox"> Nimp[ SG函数的写法</li><li style="list-style: none"><input type="checkbox"> 威尔夫博弈的写法</li></ul><p>看挑战算法程序设计竞赛比看BLOG去入门，容易得多</p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="A——ENimEN"><a href="#A——ENimEN" class="headerlink" title="A——ENimEN"></a>A——ENimEN</h3><p>规则：<br>    跟着拿，或者自由拿（后手的意义）</p><h3 id="B——Playing-with-stones"><a href="#B——Playing-with-stones" class="headerlink" title="B——Playing with stones"></a>B——Playing with stones</h3><p>在这道题上<br>感觉到这道题超过我理解能力的地方很很多<br>需要记录下自己的逻辑链</p><p>理解的方式其实只有一个<br>慢下来<br>慢到我们都能够理解<br>我现在是一个愚蠢的家伙<br>只好投入更多的时间<br>试图理解，那些现在属于他与她的事物</p><ul><li>PWS<ul><li>打表<ul><li>打表的定义<ul><li>暴力算法算出前面的答案（数据多）</li><li>手算前面的答案（数据少，而且难）</li></ul></li><li>观察SG函数，得到规律<ul><li>SG函数定义<ul><li style="list-style: none"><input type="checkbox" checked> 已知：<ul><li>SG函数 表示方法是 sg[i]</li><li>SG函数值 是某堆的物件数</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><ul><li><p>SG函数</p><ul><li>源起<ul><li>给定一个 有向无环图 和 一个起始位置顶点上的一枚棋子 ， 两名血手交替的对这枚棋子沿边进行移动，无法移动者判负。这个游戏，可以认为是所有impartial combinatorial games的抽象模型。 —— 百度百科</li></ul></li><li>具体内容：<ul><li>每个局面都看作一个顶点</li><li>定义mex函数<ul><li>集合类型的函数，接受一个集合变量，返回一个集合变量</li><li>返回 最小的不属于这个集合的非负整数</li><li>sg[x] = mex(sg[x+1])</li></ul></li><li>对于所有terminal position所对应的顶点,其sg函数值定为0</li><li>则对于一个terminal position 的所有前驱都有sg函数值不为0,</li><li>对于一个sg函数值不为0的顶点，必定存在一个后继的顶点满足sg函数值为0</li></ul></li><li>SG的意义<ul><li>类比Nim游戏<ul><li>Nim游戏<ul><li>拿石子的游戏<br>-</li></ul></li></ul></li></ul></li></ul></li><li><p>异或运算</p><ul><li>转换成二进制后，进行（相异为1）（相同为0）的运算，得到新的结果</li></ul></li></ul><p>SG的代码实现：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//f[N]:可改变当前状态的方式，N为方式的种类，f[N]要在getSG之前先预处理</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//SG[]:0~n的SG函数值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//S[]:为x后继状态的集合，</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 后继状态 ： 剩下的石子数 算出的 SG函数值（最小石子数）</span></span><br><span class="line"><span class="comment">// SG[x] ： 石子数为x时，所有  能到达的  后继状态（递归到结束）中没有出现过的</span></span><br><span class="line"><span class="comment">// 意味着，如果状态不能够</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> f[N],SG[MAXN],S[MAXN];</span><br><span class="line"><span class="function"><span class="keyword">void</span>  <span class="title">getSG</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="built_in">memset</span>(SG,<span class="number">0</span>,<span class="keyword">sizeof</span>(SG));</span><br><span class="line">    <span class="comment">//因为SG[0]始终等于0，所以i从1开始</span></span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">1</span>; i &lt;= n; i++)&#123;  <span class="comment">// 从1开始计算所有sg的值</span></span><br><span class="line">        <span class="comment">//每一次都要将上一状态 的 后继集合 重置</span></span><br><span class="line">        <span class="built_in">memset</span>(S,<span class="number">0</span>,<span class="keyword">sizeof</span>(S));  <span class="comment">//S保存的是后继状态的函数值，之后要从这里找未出现的最小自然数</span></span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>; f[j] &lt;= i &amp;&amp; j &lt;= N; j++)  <span class="comment">// 计算所有 后继状态,下标表示的就是  自然数（类似桶）</span></span><br><span class="line">            S[ SG[i-f[j]] ] = <span class="literal">true</span>;  <span class="comment">//将后继状态的SG函数值进行标记</span></span><br><span class="line">            <span class="comment">//当现有的i（石子数），减去使用不同方法后，后继状态</span></span><br><span class="line">            <span class="comment">//i = 1时，可以取走1 - f&#123;1&#125;个石子，剩余&#123;0&#125;个，所以 SG[1] = mex&#123; SG[0] &#125;= mex&#123;0&#125; = 1;</span></span><br><span class="line">            <span class="comment">//当 SG[X] 为0时，说明取完，则为最终状态，S[1] = true</span></span><br><span class="line">            <span class="comment">//当 SG[x]</span></span><br><span class="line">        <span class="keyword">for</span>(j = <span class="number">0</span>;;j++) <span class="keyword">if</span>(!S[j])&#123;   <span class="comment">//查询当前后继状态SG值中最小的非零值</span></span><br><span class="line">            SG[i] = j;<span class="comment">// 历遍S，寻找最小的自然数 —— 如何求出所有出现过的自然数呢</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;组合博弈：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="计算几何基础" scheme="http://iPhreetom.com/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY4——数据结构基础</title>
+    <link href="http://iPhreetom.com/2018/01/23/DAY4%E2%80%94%E2%80%94%20~~%E6%A0%91%E4%B8%8E%E6%A0%91%E7%9A%84%E5%88%86%E6%B2%BB~~/"/>
+    <id>http://iPhreetom.com/2018/01/23/DAY4—— ~~树与树的分治~~/</id>
+    <published>2018-01-23T14:32:53.000Z</published>
+    <updated>2018-01-25T08:55:34.022Z</updated>
+    
+    <content type="html"><![CDATA[<p><del>树的分治</del><br>数据结构： 树、堆<br><a id="more"></a></p><h1 id="树和二叉树"><a href="#树和二叉树" class="headerlink" title="树和二叉树"></a>树和二叉树</h1><ul><li>基础知识<ul><li>利用数组建立二叉树</li><li>利用结构体建立二叉树<ul><li>二叉树的三种历遍方式</li></ul></li></ul></li></ul><h1 id="优先队列和堆"><a href="#优先队列和堆" class="headerlink" title="优先队列和堆"></a>优先队列和堆</h1><h2 id="优先队列-queue-proiority-queue"><a href="#优先队列-queue-proiority-queue" class="headerlink" title="优先队列(#queue : proiority_queue)"></a>优先队列(#queue : proiority_queue)</h2><pre><code>- 操作：    - 能插入一个数值    - 取出最小（最大）的数值（取得并删除）- 实现：    - 二叉堆实现法</code></pre><h2 id="二叉堆"><a href="#二叉堆" class="headerlink" title="二叉堆"></a>二叉堆</h2><pre><code>- 性质：    - 儿子的值 一定大于等于 父亲的值    - 要求树的节点从上到下，从左到右顺序紧凑排列- 操作：    - 能插入一个数值    - 取出最小（最大）的数值（取得并删除）- 实现：    - 利用数组表示二叉树    - 左儿子的编号 是 自己编号×2+1    - 右儿子的编号 是 自己编号×2+2- 用途：    - 实现优先队列：        - 插入一个数值            - i = size++;            - dad = (i-1)/2            - 不断向上提升，直到其父亲节点比它小为止                - if(heap[dad] &lt;= x )break                - else heap[i] = heap[dad] ，i=dad //将父亲节点放下来，而插入值储实际存在变量x中            - 真正插入数组                - heap[i] = x        - 取出最小值（实际上就是更新一次堆）            - 用变量ret保存最小值            - 堆尾的值赋给根，并且用--size，表示删除            - 从根开始向下交换                - 比较儿子的值，贪心找小的一个                - 如果 儿子都 大于该值，就结束                - 否则把儿子提上来                - 返回ret</code></pre><h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><pre><code>- 性质    - 左子树的节点都比自己小    - 右子树的节点都比自己大- 操作：    - 插入一个数值        - 通过 询问（性质） 找到对应位置，插入    - 查询是否包含某个数值    - 删除某个数值        - 需要删除的节点没有左儿子，那么就把右儿子提上去        - 需要删除的节点的左儿子没有右儿子，呢么就把左儿子提上去        - 两种特列不满足，就把左儿子中最大的节点提到需要删除的节点上- 实现：    - 用结构体实现</code></pre><h2 id="二叉堆代码实现："><a href="#二叉堆代码实现：" class="headerlink" title="二叉堆代码实现："></a>二叉堆代码实现：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> heap[maxn],sz;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i = sz++;</span><br><span class="line"><span class="keyword">int</span> p = (i<span class="number">-1</span>)/<span class="number">2</span>;</span><br><span class="line"><span class="keyword">while</span>(i&gt;<span class="number">0</span>)&#123;</span><br><span class="line"><span class="keyword">if</span>(heap[p] &lt;= x)<span class="keyword">break</span>;</span><br><span class="line">heap[i] = heap[p];</span><br><span class="line">i = p;</span><br><span class="line">&#125;</span><br><span class="line">heap[i] = x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> ret = heap[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">int</span> x = heap[--sz];</span><br><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(i*<span class="number">2</span>+<span class="number">1</span> &lt; sz)&#123;</span><br><span class="line"><span class="keyword">int</span> a = i*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> b = i*<span class="number">2</span>+<span class="number">2</span>;</span><br><span class="line"><span class="keyword">if</span>(b&lt;sz &amp;&amp; heap[b] &lt; heap[a])a = b;</span><br><span class="line"><span class="keyword">if</span>(heap[a] &lt; heap[i])heap[i] = heap[a] , i = a;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">heap[i] = x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="对应习题："><a href="#对应习题：" class="headerlink" title="对应习题："></a>对应习题：</h2><p>POJ 2431 Expedition<br>POJ 3253 Fence Repair</p><h2 id="补习："><a href="#补习：" class="headerlink" title="补习："></a>补习：</h2><ul><li style="list-style: none"><input type="checkbox" checked> 用O(n)求得 最小值和第二小值<ul><li>mii1 和 mii2</li></ul></li><li style="list-style: none"><input type="checkbox" checked> 使用priority_queue实现堆的方法，push(),pop(),top()<ul><li>默认top(),pop()取出和删除最小值</li><li>取出最大值的方法：priority_queue&lt; int,vector&lt; int&gt;,greater&lt; int&gt; &gt;<ul><li>greater&lt;&gt; and less&lt;&gt;属于 #functional</li></ul></li></ul></li></ul><h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><h3 id="POJ-2431-Expedition"><a href="#POJ-2431-Expedition" class="headerlink" title="POJ 2431 Expedition"></a>POJ 2431 Expedition</h3><p>移动方法：不断移动到一个新的加油站（把终点也当作一个加油站，简易计算）<br>优先队列：当没有油时，加上队列中最大的油桶（取出最大值操作）</p><h3 id="POJ-3253-Fence-Repair"><a href="#POJ-3253-Fence-Repair" class="headerlink" title="POJ 3253 Fence Repair"></a>POJ 3253 Fence Repair</h3><p>最小代价：取出最小的两个物件合并</p><h1 id="树上的分治"><a href="#树上的分治" class="headerlink" title="树上的分治"></a><del>树上的分治</del></h1><ul><li>点分治<ul><li>选点的方法不同，导致每个点被历遍次数不同</li><li>选点的方法；<ul><li>寻找“重心”：使得 最大值 最小</li></ul></li></ul></li><li>边分治<ul><li>xxx</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;del&gt;树的分治&lt;/del&gt;&lt;br&gt;数据结构： 树、堆&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="寒训" scheme="http://iPhreetom.com/tags/%E5%AF%92%E8%AE%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY2 —— 计算几何基础</title>
+    <link href="http://iPhreetom.com/2018/01/22/DAY2%20%E2%80%94%E2%80%94%20%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%9F%BA%E7%A1%80/"/>
+    <id>http://iPhreetom.com/2018/01/22/DAY2 —— 计算几何基础/</id>
+    <published>2018-01-22T14:32:53.000Z</published>
+    <updated>2018-01-25T09:08:22.471Z</updated>
+    
+    <content type="html"><![CDATA[<p>计算几何 ：<br><a id="more"></a><br>本上挺简单的高中的解方程（解析几何）：精度不够的</p><p>几何意义：<br>求点和直线的关系<br>尽量通过向量求解<br>    叉积 四边形的面积 —————— 面积为0说明点在直线上<br>    点积 余弦值    —————— 小于0，说明点在线段间</p><h3 id="叉乘的重要性质："><a href="#叉乘的重要性质：" class="headerlink" title="叉乘的重要性质："></a>叉乘的重要性质：</h3><blockquote><p>若 P × Q &gt; 0 , 则P 在Q的顺时针方向<br>若 P × Q &lt; 0 , 则P 在Q的逆时针方向<br>若 P × Q = 0 , 则P 与Q共线,但可能同向也可能反向</p></blockquote><p>相交：</p><p>距离：<br>点到直线的距离<br>    求垂线</p><p>线段到线段的距离：<br>    相交<br>    最短值</p><p>位移：</p><p>旋转（虚数的几何意义）：<br>    通过成cosx + i·sinx</p><p>凸多边形：<br>    凸多边形的面积<br>        逆时针枚举，算小三角形状<br>    三角形重心<br>        用面积加权求平均值<br>    点是否在凸多边形内<br>        由点向多边形端点<br>    多边形交集<br>        把多边形端点按x排序<br>        由x来历遍</p><p>凹多边形：<br>    简单的枚举，看交点个数，奇数则在里面</p><p>凸包：<br>    给多个点，取出一些点，形成一个凸多边形<br>        比赛常用的：<br>        以x升序，y降序求字典序，得到左右端点</p><p>半平面交（金牌题）：<br>    D&amp;C<br>    S&amp;I</p><p>扫描线：<br>    字典序+x历遍</p><p>旋转卡壳：</p><p>Problems list：<br>poj 1127<br>poj 1218<br>poj 2932</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算几何 ：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="计算几何基础" scheme="http://iPhreetom.com/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY2计算几何</title>
+    <link href="http://iPhreetom.com/2018/01/21/DAY2%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    <id>http://iPhreetom.com/2018/01/21/DAY2——计算几何/</id>
+    <published>2018-01-21T14:32:53.000Z</published>
+    <updated>2018-01-25T08:59:34.930Z</updated>
+    
+    <content type="html"><![CDATA[<p>计算几何习题 ：<br><a id="more"></a></p><h2 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h2><p>今天开始愉快的抄模板，积累强大的武器吧。<br>作为什么都不知道的萌新，突然从冷兵器时代，进入到了现代社会就是这样的感觉吧？（乡下人进村（笑<br>针对几何图形的计算，建立在向量法的，基础运算库（模板）</p><ul><li>基本运算：<ul><li>加法，减法</li><li>比较运算</li><li>与常数的乘法</li><li>内积（以点为起点，以线段两个端点为终点作向量）<ul><li>如果 <code>小于</code> 零说明在两点之间</li><li>如果 <code>等于</code> 零说成90°角</li><li>如果 <code>大于</code> 零说明在两点之外</li></ul></li><li>外积（以点为起点，以线段两个端为点终点作向量）</li></ul></li><li>常用判断：<ul><li>两线段的交点坐标</li><li>点是否在线段上</li></ul></li></ul><h2 id="A-Jack-Straws"><a href="#A-Jack-Straws" class="headerlink" title="A - Jack Straws"></a>A - Jack Straws</h2><p>桌上有着很多根吸管，并且由放置的顺序来确定每个吸管的编号<br>给出每个习惯的两点坐标<br>然后询问编号不同的两根吸管是否直接或间接相连</p><p>直观的想：<br>先判断是否两根吸管直接相连<br>如果不相连：<br>    再从某根吸管开始历遍所有其他的吸管，如果有与它相连的吸管，则判断这根吸管是否与目标直接相连，<br>    （这里需要一个bool数组记录那些事已经相连过的）<br>    直到所有吸管都历遍过了，输出NOT CONNNECTED</p><h2 id="B-—-Toys"><a href="#B-—-Toys" class="headerlink" title="B — Toys"></a>B — Toys</h2><p>计算箱子中每个格子的玩具数量</p><p>现在拥有的工具<br>判断点是否在线段或者直线上<br>    点积 和 叉积<br>    点积：<br>    叉积： 如果等于零说明在两点确定的直线上</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">问题：玩具在哪个格子里?</span></span><br><span class="line"><span class="comment">简单思路：把点与左上角的点相连，作为线段L，通过计算L与格子分割线的交点的个数，得到点的位置</span></span><br><span class="line"><span class="comment">根据发杂度改进：用二分查找，寻找和L相交，最右边的分割线</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">补习：</span></span><br><span class="line"><span class="comment">二分法的实现：</span></span><br><span class="line"><span class="comment">循环条件：r-l&gt;1</span></span><br><span class="line"><span class="comment">左右位置: l = -1 ; r = n(不取)</span></span><br><span class="line"><span class="comment">中点计算方式: mid = (l+1)/2</span></span><br><span class="line"><span class="comment">移动方式: r = mid ; l = mid;</span></span><br><span class="line"><span class="comment">答案位置： r</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算几何习题 ：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="计算几何基础" scheme="http://iPhreetom.com/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY1——杂记</title>
+    <link href="http://iPhreetom.com/2018/01/20/DAY%201%E2%80%94%E2%80%94%E6%9D%82%E8%AE%B0/"/>
+    <id>http://iPhreetom.com/2018/01/20/DAY 1——杂记/</id>
+    <published>2018-01-20T15:56:01.000Z</published>
+    <updated>2018-01-30T06:44:15.933Z</updated>
+    
+    <content type="html"><![CDATA[<p>DAY1的杂记<br><a id="more"></a><br>DAY 1</p><p>#思维：</p><p>跟着课中的内容<br>理解新的信息的意义<br>运用这种意义，去解决问题<br>而后，看着别人的代码实现，试着具体理解</p><p>算法课的感觉：<br>    基数排序：<br>    一层一层的变换像神经网络</p><p>讲课方法：（理解方法）<br>    朴素的方法，优化的方法<br>    利用前面算过的内容</p><p>做题的方法<br>    Height数组的意义<br>    二分法<br>    后缀数组前缀</p><p>区分：<br>    在拥有了很多拥有“强意义”的数组后，利用这些信息简单寻找答案<br>    C的写题有两种抽象方法，利用函数递归或者做什么，利用数组，不断的去堆叠信息</p><p>学习的梯度：<br>    拥有的信息去匹配</p><p>题目<br>    A题<br>    poj<br>    bz<br>    bz</p><p>目的：不懂，不懂什么<br>    算得sa，即后缀数组</p><h1 id="学习内容"><a href="#学习内容" class="headerlink" title="学习内容"></a>学习内容</h1><p>字符串处理：<br>    后缀数组：</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;DAY1的杂记&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="杂记" scheme="http://iPhreetom.com/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DAY 1 后缀数组</title>
+    <link href="http://iPhreetom.com/2018/01/20/DAY1%E2%80%94%E2%80%94%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
+    <id>http://iPhreetom.com/2018/01/20/DAY1——后缀数组/</id>
+    <published>2018-01-20T14:32:53.000Z</published>
+    <updated>2018-01-21T00:28:30.432Z</updated>
+    
+    <content type="html"><![CDATA[<p>后缀数组：是处理字符串的基础算法。<br><a id="more"></a></p><h2 id="变量含义"><a href="#变量含义" class="headerlink" title="变量含义"></a>变量含义</h2><ul><li>str ： 需要处理的字符串</li><li>suffix[i]： str中下标为i的后缀</li><li>rank[i] ： suffix[i]在所有后缀中的排名</li><li>sa[i] ： 排名为i的后缀 为suffix[sa[i]] , 与rank互为逆运算</li></ul><p>因为rank和sa是互逆的，因而只需要求出rank，然后历遍一次转化成另一个<br>求sa的方法有两种：<code>倍增算法</code>和<code>DC3</code>算法</p><h2 id="倍增法求后缀数组"><a href="#倍增法求后缀数组" class="headerlink" title="倍增法求后缀数组"></a>倍增法求后缀数组</h2><h4 id="思路：对每个字符开始的长度为2-k-的字符串求出排名，k从0开始，每次递增1，直到2-k-大于-len-时，所得到的序列就是rank，同时sa也就知道了"><a href="#思路：对每个字符开始的长度为2-k-的字符串求出排名，k从0开始，每次递增1，直到2-k-大于-len-时，所得到的序列就是rank，同时sa也就知道了" class="headerlink" title="思路：对每个字符开始的长度为2^k 的字符串求出排名，k从0开始，每次递增1，直到2^k 大于 len 时，所得到的序列就是rank，同时sa也就知道了"></a>思路：对每个字符开始的长度为2^k 的字符串求出排名，k从0开始，每次递增1，直到2^k 大于 len 时，所得到的序列就是rank，同时sa也就知道了</h4><h4 id="运用基数排序，在线性时间内完成0"><a href="#运用基数排序，在线性时间内完成0" class="headerlink" title="运用基数排序，在线性时间内完成0"></a>运用基数排序，在线性时间内完成0</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;后缀数组：是处理字符串的基础算法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="后缀数组" scheme="http://iPhreetom.com/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACMer——动态规划</title>
+    <link href="http://iPhreetom.com/2017/12/28/ACMer%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <id>http://iPhreetom.com/2017/12/28/ACMer——动态规划/</id>
+    <published>2017-12-28T01:32:53.000Z</published>
+    <updated>2018-01-20T15:48:34.012Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>前置技能：<br>1-递归<br>2-二维数组</p><p>引论：在递归入门时，我们的都学过用简单递归写出一个斐波拉契数列的计算公式。</p><p>f(1) = 1;<br>f(2) = 1;<br>f(n) = f(n-1) + f(n-2);</p><p>但是这个算法的复杂非常高，近似于O(2^n),<br>原因在于重复计算,要是我们能够记下已经 算出结果的f(m),那么再一次需要使用f(m)时，就不必在算一次了，<br>那么用一个数组保存已算出的答案，并且区分</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;基础&quot;&gt;&lt;a href=&quot;#基础&quot; class=&quot;headerlink&quot; title=&quot;基础&quot;&gt;&lt;/a&gt;基础&lt;/h2&gt;&lt;p&gt;前置技能：&lt;br&gt;1-递归&lt;br&gt;2-二维数组&lt;/p&gt;
+&lt;p&gt;引论：在递归入门时，我们的都学过用简单递归写出一个斐波拉契数列的计算公式。&lt;/
+      
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="teach" scheme="http://iPhreetom.com/tags/teach/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS基础知识</title>
+    <link href="http://iPhreetom.com/2017/12/20/CSS/"/>
+    <id>http://iPhreetom.com/2017/12/20/CSS/</id>
+    <published>2017-12-19T16:00:00.000Z</published>
+    <updated>2018-01-20T10:13:53.471Z</updated>
+    
+    <content type="html"><![CDATA[<p>了解CSS<br><a id="more"></a></p><h3 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h3><p>选择器 属性 值</p><h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><p>&nbsp;同时多个使用多个选择器    ：<br>&nbsp;&nbsp;使用 “，”分隔<br>&nbsp;派生选择器    ：<br>&nbsp;&nbsp;子关系；<br>&nbsp;&nbsp;单重（严格）子关系（&gt;）；<br>&nbsp;&nbsp;兄弟关系(+);<br>&nbsp;id<br>&nbsp;&nbsp;# 作为标识符<br>&nbsp;&nbsp;通常作为派生选择器　#itname p {}<br>&nbsp;class<br>&nbsp;&nbsp;.　作为标识符(.itname)<br>&nbsp;&nbsp;可以用做派生选择</p><h4 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h4><p>&nbsp;title<br>&nbsp;&nbsp;[title]<br>&nbsp;&nbsp;[title = itname]<br>&nbsp;&nbsp;[title ~= partname]<br>&nbsp;&nbsp;在没有任何值的时候，对于所有含title的句子都渲染</p><h2 id="css-learner"><a href="#css-learner" class="headerlink" title="css learner"></a>css learner</h2><h3 id="Working-with-Text"><a href="#Working-with-Text" class="headerlink" title="Working with Text"></a>Working with Text</h3><h4 id="font"><a href="#font" class="headerlink" title="font"></a>font</h4><p>&nbsp;font-family:<br>&nbsp;&nbsp;type of font<br>&nbsp;font-size:<br>&nbsp;&nbsp;1em == 16px<br>&nbsp;&nbsp;notice: try different combinations of font-size and page zooming<br>&nbsp;font-style:<br>&nbsp;&nbsp;italic（寻找是否该字体存在斜体）<br>&nbsp;&nbsp;normal (such as using in “strong”)<br>&nbsp;&nbsp;oblique (强制渲染成斜体)<br>&nbsp;font-weight:<br>&nbsp;&nbsp;bold<br>&nbsp;&nbsp;bolder(感觉和bold没有区别)<br>&nbsp;&nbsp;lighter<br>&nbsp;&nbsp;number from 100 to 900<br>&nbsp;font-variant:<br>&nbsp;&nbsp;normal<br>&nbsp;&nbsp;small-caps(奇妙的变化：首先让原来的大写字母突出放大，再让小写字母变成大写)<br>&nbsp;&nbsp;inherit(继承父元素的值)</p><h4 id="color"><a href="#color" class="headerlink" title="color"></a>color</h4><p>&nbsp;rgb（不会用）<br>&nbsp;#0F(不会用×２)<br>&nbsp;使用名字</p><h4 id="text-align"><a href="#text-align" class="headerlink" title="text-align:"></a>text-align:</h4><p>&nbsp;left<br>&nbsp;right<br>&nbsp;center<br>&nbsp;justify(实现两端对齐文本)</p><h4 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h4><p>&nbsp;table-tr-td:<br>&nbsp;&nbsp;top<br>&nbsp;&nbsp;middle<br>&nbsp;&nbsp;bottom<br>&nbsp;in one line<br>&nbsp;&nbsp;baseline<br>&nbsp;&nbsp;sub<br>&nbsp;&nbsp;super<br>&nbsp;&nbsp;10px or -10px(px , pt , cm)<br>&nbsp;div<br>&nbsp;&nbsp;height<br>&nbsp;&nbsp;width<br>&nbsp;&nbsp;background-color<br>&nbsp;&nbsp;inline-table<br>&nbsp;&nbsp;div:<br>&nbsp;&nbsp;&nbsp;table-cell<br>&nbsp;&nbsp;&nbsp;vertical-align:middle or else</p><h4 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a>text-decoration</h4><p>&nbsp;none<br>&nbsp;inherit<br>&nbsp;overline<br>&nbsp;underline<br>&nbsp;line-through</p><h4 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h4><p>&nbsp;60px also -60px<br>&nbsp;inherit</p><h4 id="text-shadow"><a href="#text-shadow" class="headerlink" title="text-shadow"></a>text-shadow</h4><p>&nbsp;Xpx Ypx blur(&gt;=0) color(or default same color)</p><h4 id="text-transform"><a href="#text-transform" class="headerlink" title="text-transform"></a>text-transform</h4><p>&nbsp;capitalize (首字母大写)<br>&nbsp;uppercase<br>&nbsp;lowercase</p><h4 id="letter-spacing"><a href="#letter-spacing" class="headerlink" title="letter-spacing"></a>letter-spacing</h4><p>&nbsp;normal<br>&nbsp;length (can also be negative)<br>&nbsp;inherit</p><h4 id="word-spacing"><a href="#word-spacing" class="headerlink" title="word-spacing"></a>word-spacing</h4><p>&nbsp;normal<br>&nbsp;length<br>&nbsp;inherit</p><h4 id="white-space"><a href="#white-space" class="headerlink" title="white-space"></a>white-space</h4><p>&nbsp;normal （不处理换行符，必要时换行，空格不缩减）<br>&nbsp;inherit<br>&nbsp;nowrap (禁止换行，缩减空格)<br>&nbsp;pre-wrap (不处理换行符，必要时换行，缩减所有空格)<br>&nbsp;pre-line （处理换行符，缩减空格）<br>&nbsp;pre （处理换行符，空格不缩减）</p><h4 id=""><a href="#" class="headerlink" title=" "></a> </h4><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><p>&nbsp;property<br>&nbsp;&nbsp;height<br>&nbsp;&nbsp;width<br>&nbsp;&nbsp;bolder: 1px solid blue;<br>&nbsp;tr 行<br>&nbsp;th , td 列<br>&nbsp;&nbsp;th 自动加粗，td普通<br>&nbsp;&nbsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;了解CSS&lt;br&gt;
+    
+    </summary>
+    
+      <category term="现代前端魔法" scheme="http://iPhreetom.com/categories/%E7%8E%B0%E4%BB%A3%E5%89%8D%E7%AB%AF%E9%AD%94%E6%B3%95/"/>
+    
+    
+      <category term="CSS" scheme="http://iPhreetom.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CODEVS-Gold贪心</title>
+    <link href="http://iPhreetom.com/2017/12/10/vscode%E2%80%94%E2%80%94gold/"/>
+    <id>http://iPhreetom.com/2017/12/10/vscode——gold/</id>
+    <published>2017-12-09T23:32:53.000Z</published>
+    <updated>2018-01-30T07:05:53.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="CODEVS-Gold贪心"><a href="#CODEVS-Gold贪心" class="headerlink" title="CODEVS-Gold贪心"></a>CODEVS-Gold贪心</h1><p>欢迎加入NOI之争</p><a id="more"></a><p>#笔记</p><h1 id="level-3"><a href="#level-3" class="headerlink" title="level 3"></a>level 3</h1><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><h5 id="————-lt-均分纸牌-gt"><a href="#————-lt-均分纸牌-gt" class="headerlink" title="————&lt;均分纸牌&gt;"></a>————&lt;均分纸牌&gt;</h5><pre><code>贪心：在每种情况下都选择当前最优解。</code></pre><p>&emsp;&emsp;对于本题，思想类似于：&lt;括号匹配&gt;，利用不断解决边界的当前子问题，来解决全部问题；<br>&emsp;&emsp;类似于：&lt;……插入排序、冒泡排序……&gt;<br>&emsp;&emsp;&emsp;&emsp;和它们相似的地方是都使用了一种思想：历遍数组时，历遍过的一段是“排序（分配）”好的。<br>&emsp;&emsp;&emsp;&emsp;</p><h5 id="————-lt-线段覆盖-gt"><a href="#————-lt-线段覆盖-gt" class="headerlink" title="————&lt;线段覆盖&gt;"></a>————&lt;线段覆盖&gt;</h5><pre><code>时间流失警示：分析，不要莽撞的写题目。当分析不出来的时候，查阅当前题型在《算法竞赛入门经典》中找到对应章节。</code></pre><p>在使用贪心法解决问题时，我们总希望 数据是排序过的<br>有着最大，最小等，表示极限的端点<br>通过不断解决边界上的问题，最终解决整体问题。</p><p>本题通过把右边的边界排序后<br>对左边界进行选择<br>第一步最重要：<br>我们选择排序后得到的第一个线段，<br>    （我们只需要确定第一个线段的右边界是最靠左的右边界，而第一个线段的左边界在哪里我们并不关心，因为它不会影响后续的抉择。）<br>用一个变量贮存 右边界的值<br>通过继续历遍左边界（+=2），判断是否现在的左边界大于等于储存的右边界。<br>    如果大于等于，那么右边界 换做当前线段的右边界。<br>    如果不是，“删除”当前线段。</p><h3 id="高精度"><a href="#高精度" class="headerlink" title="高精度"></a>高精度</h3><p>当然，就算是刚学会数组的人都可以实现一个高精度的加法。<br>但是，想要让它能够像int类型一样的加减，我们需要用到struct的特性来实现它<br>对……<br>我们需要学习<br>1、C++ 结构体的构造函数<br>2、给结构体重载运算符</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CODEVS-Gold贪心&quot;&gt;&lt;a href=&quot;#CODEVS-Gold贪心&quot; class=&quot;headerlink&quot; title=&quot;CODEVS-Gold贪心&quot;&gt;&lt;/a&gt;CODEVS-Gold贪心&lt;/h1&gt;&lt;p&gt;欢迎加入NOI之争&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="http://iPhreetom.com/tags/ACM/"/>
+    
+      <category term="step-by-step" scheme="http://iPhreetom.com/tags/step-by-step/"/>
+    
+      <category term="贪心" scheme="http://iPhreetom.com/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CODEVS-Silver</title>
+    <link href="http://iPhreetom.com/2017/12/07/vscode/"/>
+    <id>http://iPhreetom.com/2017/12/07/vscode/</id>
+    <published>2017-12-07T14:32:53.000Z</published>
+    <updated>2018-01-30T07:05:50.594Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="CODEVS-Silver踩坑指南"><a href="#CODEVS-Silver踩坑指南" class="headerlink" title="CODEVS-Silver踩坑指南"></a>CODEVS-Silver踩坑指南</h1><p>欢迎加入NOI之争</p><h1 id="闲聊："><a href="#闲聊：" class="headerlink" title="闲聊："></a>闲聊：</h1><p>听闻了一个叫做<a href="http://codevs.cn/" target="_blank" rel="noopener">codevs</a>的网站，发现它对萌新很友善<br>其中不得不提的一点是<br>它会给你，测试失败的样例中<br>样例的输入<br>样例的输出<br>你的输出<br>woc……这简直……再也不用对着一道题的两个词<br>Wrong answer（wa）<br>浪费无数脑细胞<br><del>妈妈再也不用担心我的学习</del></p><p>题目的按照类型分类<br>一个一个题型攻略的快感容易让人上瘾呢<br>让某人忍不住大吼“我热爱学习”……</p><a id="more"></a><p>#笔记</p><h1 id="没有存在感的level-1："><a href="#没有存在感的level-1：" class="headerlink" title="没有存在感的level 1："></a>没有存在感的level 1：</h1><h3 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h3><h5 id="单词反转"><a href="#单词反转" class="headerlink" title="单词反转"></a>单词反转</h5><p>&emsp;&emsp;关于STL的简单运用<br>&emsp;&emsp;使用STL-stack（栈）<br>&emsp;&emsp;使用pop(),push(),top()<br>坑1：注意stack是用top返回可以提出的、顶部的值，而queue使用front()。</p><h1 id="level-2"><a href="#level-2" class="headerlink" title="level 2:"></a>level 2:</h1><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h5 id="————-lt-随机数-gt-："><a href="#————-lt-随机数-gt-：" class="headerlink" title="————&lt;随机数&gt;："></a>————&lt;随机数&gt;：</h5><p>理解：<br>&emsp;&emsp;关于STL的简单运用<br>&emsp;&emsp;set类型，和它的insert操作</p><p>坑1：set不支持下标运算<br>坑2：set的迭代器生成方法：如果不能用auto，那么使用标准的迭代器生成方式</p><pre><code>set&lt;int&gt;::iterator it;</code></pre><h5 id="————"><a href="#————" class="headerlink" title="————"></a>————<10^6排序方法></10^6排序方法></h5><p>&emsp;&emsp;桶排序<br>坑1：在数组和计数的地方都是用了n<br>&emsp;计数定义为cn，数组为n<br>&emsp;<br>坑2：数组越界，循环条件多写一个0<br>&emsp;使用define的方法，在头部写一个maxn 记录规模值；<br>坑3：桶排序，输出的是i，而不是数组中的内容。</p><h3 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h3><h5 id="————-lt-－cantor表-gt"><a href="#————-lt-－cantor表-gt" class="headerlink" title="————&lt;－cantor表&gt;"></a>————&lt;－cantor表&gt;</h5><p>&emsp;&emsp;好的，我们递推计算<br>&emsp;&emsp;计算条件很复杂时，请使用人类易于理解的名词作为bool的变量名<br>&emsp;&emsp;</p><h5 id="————-lt-蛇行走位-gt"><a href="#————-lt-蛇行走位-gt" class="headerlink" title="————&lt;蛇行走位&gt;"></a>————&lt;蛇行走位&gt;</h5><p>&emsp;&emsp;从起点开始认真打表<br>&emsp;&emsp;举个例子规模为3</p><pre><code>每一层都可以看作由三步拓展第一步 右or左的顺序前进一格第二步 上or下的顺序走len步第三步 左or右的顺序走len步len是当前构建的规模数-1做题先找到中点位置，</code></pre><p>坑1：审题中说了是奇数，所以不存在问偶数的特殊情况<br>坑2：在宿舍写题目的效率or专注度远不如在自习室，在开发和写OJ时，请移步到自习室，等待电量低后，会宿舍，充电，写纸面作业，or看书（应该可以做到）</p><h3 id="数论入门"><a href="#数论入门" class="headerlink" title="数论入门"></a>数论入门</h3><h5 id="————-lt-素数判断-gt"><a href="#————-lt-素数判断-gt" class="headerlink" title="————&lt;素数判断&gt;"></a>————&lt;素数判断&gt;</h5><p>&emsp;&emsp;从2到 根号n ，历遍求是否能够整除（用%的方法，比用double和int强制转化的方法好）<br>&emsp;&emsp;输出时，注意用“\”转义“\”的规则<br>&emsp;&emsp;<br>&emsp;&emsp;</p><h5 id="————-lt-最小公倍数和最大公约数-gt"><a href="#————-lt-最小公倍数和最大公约数-gt" class="headerlink" title="————&lt;最小公倍数和最大公约数&gt;"></a>————&lt;最小公倍数和最大公约数&gt;</h5><pre><code>求最小公倍数算法：最小公倍数=两整数的乘积÷最大公约数求最大公约数算法：辗转相除法：</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a=i,b=j,c;</span><br><span class="line"><span class="keyword">while</span>(b!=<span class="number">0</span>)&#123;</span><br><span class="line">c=a%b;</span><br><span class="line">a=b;</span><br><span class="line">b=c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="递推"><a href="#递推" class="headerlink" title="递推"></a>递推</h3><h5 id="————-lt-数的计算-gt"><a href="#————-lt-数的计算-gt" class="headerlink" title="————&lt;数的计算&gt;"></a>————&lt;数的计算&gt;</h5><p>&emsp;&emsp;暴力直接把思路穷举出来了<br>&emsp;&emsp;感觉不满意<br>&emsp;&emsp;简化思路，让它能够被自动递推<br>&emsp;&emsp;用逻辑判断加循环（if，else，for）写出自己的框架<br>&emsp;&emsp;然后实现自己的框架</p><pre><code>对于新手，伪代码（思路）很重要</code></pre><p>例子：<br>&emsp;&emsp;当a[1] ————&lt;= a[0]/2时<br>&emsp;&emsp;&emsp;&emsp;对于一个位置,在它被+=1后<br>&emsp;&emsp;&emsp;&emsp;如果它小于等于 上一位的一半<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;count++;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;下一位清零;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对下一位执行同样的操作//goto i++;//continue;<br>&emsp;&emsp;&emsp;&emsp;否则，回调上一位//i–;(i-=2;continue;)</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;a[<span class="number">1</span>]————&lt;=a[<span class="number">0</span>]/<span class="number">2</span>;i++)&#123;</span><br><span class="line"><span class="keyword">if</span>(++a[i]————&lt;=a[i<span class="number">-1</span>]/<span class="number">2</span>)&#123;</span><br><span class="line">count++;</span><br><span class="line">a[i+<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">continue</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">i-=<span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="————-1"><a href="#————-1" class="headerlink" title="————"></a>————<fib></fib></h5><p>&emsp;&emsp;递推，用abc表示三个不断相互加和的数字，通过判断项数/3得到的余数，判断后输出abc中一个。<br>&emsp;&emsp;（此方法需要调试，余数和输出关系的判断，是一个坑）</p><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><h5 id="————-lt-二叉树的最大宽度和高度-gt"><a href="#————-lt-二叉树的最大宽度和高度-gt" class="headerlink" title="————&lt;二叉树的最大宽度和高度&gt;"></a>————&lt;二叉树的最大宽度和高度&gt;</h5><p>坑0:审视题目传达的意思（俗称审题）</p><pre><code>逻辑，在看明白要干什么了，再动手做。篇幅长的题目，逻辑链长的题目，可以使用辅助工具：纸或者电子设备在作为新手写题目时，推荐要先 写解题思路、题目要求。</code></pre><p>坑1：结构体使用</p><pre><code>（1）结构体变量.成员名。如，stu.num。（2）(*p).成员名。如，(*p).num。（3）p-&gt;成员名。如，p-&gt;num。</code></pre><p>坑2：函数</p><pre><code>return后面的内容将不会被执行</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二叉树递归</span></span><br><span class="line"><span class="keyword">if</span>(T-&gt;num == i)</span><br><span class="line"><span class="keyword">return</span> T;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="keyword">if</span>(T-&gt;left!=<span class="literal">NULL</span>)</span><br><span class="line"><span class="keyword">return</span> dfsfind(i,T-&gt;left);</span><br><span class="line"><span class="keyword">if</span>(T-&gt;right!=<span class="literal">NULL</span>)</span><br><span class="line"><span class="keyword">return</span> dfsfind(i,T-&gt;right);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//教科书一般的经典错误，以为else中的return会在left调用完后被调用。</span></span><br></pre></td></tr></table></figure><p>坑3：递归</p><pre><code>理解递归的调用：        void类型：在符合条件的时候，赋答案给全局变量        有返回值类型：在没有寻找到正确答案的时候：                如果不返回东西：编译器帮你返回一个不确定的值                上一个if终止条件可以是下一个if起始条件时，返回函数返回　即是终结</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">NODE *<span class="title">dfsfind</span><span class="params">(<span class="keyword">int</span> i,NODE *T)</span></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(T-&gt;num == i)&#123;</span><br><span class="line"><span class="keyword">return</span> T;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="keyword">if</span>(T-&gt;left != <span class="literal">NULL</span>)</span><br><span class="line"><span class="keyword">if</span>(dfsfind(i,T-&gt;left)!=<span class="literal">NULL</span>)<span class="keyword">return</span> dfsfind(i,T-&gt;left);</span><br><span class="line"><span class="keyword">if</span>(T-&gt;right != <span class="literal">NULL</span>)</span><br><span class="line"><span class="keyword">if</span>(dfsfind(i,T-&gt;right)!=<span class="literal">NULL</span>)<span class="keyword">return</span> dfsfind(i,T-&gt;right);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>坑4：初始化</p><pre><code>不要信任编译器！不要信任编译器！不要信任编译器！这句话很重要有些人告诉我们：定义在全局变量区域的int变量，int数组会被初始化全部为0，有些人告诉我们：int a[10]={0};可以把a中的变量全部初始化为0；有人……是，没错，在绝大多数情况下，这些事情都没错但是，有时候，编译器抽风了，和你说，它就是没有被初始化……如果你想要搞明白在怎么回事：    --&gt; baidu，google    --&gt; 学会汇编，多看文档</code></pre><p>坑5（编译器察觉）：顺序</p><pre><code>结构体下面才能够使用结构体去，定义函数，定义变量</code></pre><p>坑6：大幅改写</p><pre><code>突然发现一个功能需要被重复多次，试着改写把某一大部分改写成一个函数    变量的作用域（相互关联）容易搞错极力不推荐把主函数的某部分突然改写成一个函数结构耗费大量时间但是一开始全部使用全局变量之后就可以随便写void函数啦（ACM经验之谈）</code></pre><p>坑7：引用</p><pre><code>代码的核心是：    new NODE();需要使用指针    NODE{...NODE　*left;...}引用与这两个核心是不兼容的</code></pre><h5 id="————-lt-简单递归-gt"><a href="#————-lt-简单递归-gt" class="headerlink" title="————&lt;简单递归&gt;"></a>————&lt;简单递归&gt;</h5><p>&emsp;&emsp;emmmmm，这个很简单的啦。<br>&emsp;&emsp;规定 结束条件<br>&emsp;&emsp;其他情况 返回自身<br>&emsp;&emsp;</p><h5 id="————-2"><a href="#————-2" class="headerlink" title="————"></a>————<3n+1></3n+1></h5><p>&emsp;&emsp;递归理解：</p><pre><code>…… return f();相当于把f()的返回值 拿来当作自己的返回值。</code></pre><p>所以最深处的返回值就是真实的返回值<br>可以把它比作一条笔直的递归链（形象的词，不准确），从尾返回到头</p><pre><code>……return f(---) + f(---)</code></pre><p>则是把两个函数的值合起来当作自己的返回值：<br>可以把它比作 一个从顶点向下拓展的三角形<br>先把建造整个三角形，然后从最下一层开始向上收缩。<br>（思考一下：是否存在重复计算）</p><h5 id="————-lt-二叉树的先中后历遍-gt"><a href="#————-lt-二叉树的先中后历遍-gt" class="headerlink" title="————&lt;二叉树的先中后历遍&gt;"></a>————&lt;二叉树的先中后历遍&gt;</h5><p>&emsp;&emsp;二叉树的基本操作<br>&emsp;&emsp;<br>坑1：</p><pre><code>struct A的构造函数写作A(参数，参数):ver(值)....{} ;    参数：可以为空    值：        空        参数        默认常量（数值，NULL，字符）使用时：A = new A(参数，参数);相当于调用了构造函数    构造函数在定义 n维向量的点时，相当形象        EX: p(x,y,z);函数后就该跟着一个{}，因为构造函数没有实际内容，这个括号容易被遗漏</code></pre><h5 id="————-lt-罗汉塔-gt"><a href="#————-lt-罗汉塔-gt" class="headerlink" title="————&lt;罗汉塔&gt;"></a>————&lt;罗汉塔&gt;</h5><p>罗汉塔，要把所有需要用到的变量赋予意义，。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">move</span><span class="params">(<span class="keyword">int</span> num,<span class="keyword">char</span> from,<span class="keyword">char</span> by,<span class="keyword">char</span> to)</span></span></span><br></pre></td></tr></table></figure></p><p>简而言之：</p><pre><code>void在理解递归时更加方便，递归时，不用再去纠结返回什么值，而是直接思考递归本身，用人类的思维理解。</code></pre><h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><h5 id="水题两道"><a href="#水题两道" class="headerlink" title="水题两道"></a>水题两道</h5><p>&emsp;&emsp;方法：<br>&emsp;&emsp;char 和 int 的转换<br>&emsp;&emsp;&emsp;&emsp;1&gt; (‘a’ &lt;= c &amp;&amp; c &gt;= ‘z’)<br>&emsp;&emsp;&emsp;&emsp;2&gt; (num = c - ‘0’) 或者 (num = c - ‘A’)</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CODEVS-Silver踩坑指南&quot;&gt;&lt;a href=&quot;#CODEVS-Silver踩坑指南&quot; class=&quot;headerlink&quot; title=&quot;CODEVS-Silver踩坑指南&quot;&gt;&lt;/a&gt;CODEVS-Silver踩坑指南&lt;/h1&gt;&lt;p&gt;欢迎加入NOI之争&lt;/p&gt;
+&lt;h1 id=&quot;闲聊：&quot;&gt;&lt;a href=&quot;#闲聊：&quot; class=&quot;headerlink&quot; title=&quot;闲聊：&quot;&gt;&lt;/a&gt;闲聊：&lt;/h1&gt;&lt;p&gt;听闻了一个叫做&lt;a href=&quot;http://codevs.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;codevs&lt;/a&gt;的网站，发现它对萌新很友善&lt;br&gt;其中不得不提的一点是&lt;br&gt;它会给你，测试失败的样例中&lt;br&gt;样例的输入&lt;br&gt;样例的输出&lt;br&gt;你的输出&lt;br&gt;woc……这简直……再也不用对着一道题的两个词&lt;br&gt;Wrong answer（wa）&lt;br&gt;浪费无数脑细胞&lt;br&gt;&lt;del&gt;妈妈再也不用担心我的学习&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;题目的按照类型分类&lt;br&gt;一个一个题型攻略的快感容易让人上瘾呢&lt;br&gt;让某人忍不住大吼“我热爱学习”……&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://iPhreetom.com/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="http://iPhreetom.com/tags/ACM/"/>
+    
+      <category term="step-by-step" scheme="http://iPhreetom.com/tags/step-by-step/"/>
+    
+      <category term="递归" scheme="http://iPhreetom.com/tags/%E9%80%92%E5%BD%92/"/>
+    
+      <category term="数论" scheme="http://iPhreetom.com/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="汉诺塔" scheme="http://iPhreetom.com/tags/%E6%B1%89%E8%AF%BA%E5%A1%94/"/>
+    
+      <category term="二叉树" scheme="http://iPhreetom.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="搜索" scheme="http://iPhreetom.com/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="结构体" scheme="http://iPhreetom.com/tags/%E7%BB%93%E6%9E%84%E4%BD%93/"/>
+    
+      <category term="STL" scheme="http://iPhreetom.com/tags/STL/"/>
+    
+      <category term="模拟" scheme="http://iPhreetom.com/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>萌新的blog之旅</title>
+    <link href="http://iPhreetom.com/2017/11/29/%E8%90%8C%E6%96%B0%E7%9A%84blog%E4%B9%8B%E6%97%85/"/>
+    <id>http://iPhreetom.com/2017/11/29/萌新的blog之旅/</id>
+    <published>2017-11-29T15:22:53.000Z</published>
+    <updated>2018-01-28T02:31:15.246Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为什么都不懂的蒟蒻萌新来到了广阔的大学</p><p>成日在和自己的无知作斗争</p><p>某日 被一只沉溺DOTA2的<a href="https://zhuzeyu22.github.io/" target="_blank" rel="noopener">fi15</a>安利一个叫做<strong><em>hexo+github一天建成blog</em></strong>的神奇方法，于是就愉快的跳进了这个史前巨坑，对，他有句话说对了，首先……你得找对教程。</p><a id="more"></a><p>##总结：</p><p>首先是下载两个软件（node.js 和 git)</p><p>安装hexo</p><p>建立模板</p><p>—-预览—-</p><p>第一步完成</p><p>为了炫耀的效果更佳</p><p>更换主题，配置一堆东西</p><p>写自己的文章</p><p>–在浏览器里继续独自观看—-</p><p>第二步完成</p><p>然后为了能向别人展示</p><p>先注册github，创建一个项目</p><p>在本地使用git</p><p>把东西拷贝进 io里</p><p>使用手动提交</p><p>—在浏览器中访问自己的网站—-</p><p>第三步完成</p><p>是时候秀一波操作了</p><p>“请开始你们的表演”</p><p>“第四步？不存在的”</p><p>###首先是下载两个软件</p><p>1· <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p><p>2· <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js</a></p><p>下载后</p><p>先打开</p><p>node.js 的命令行（Node.js command prompt)</p><p><img src="/img/where.png" alt=""></p><p><img src="/img/emmm.png" alt=""></p><p>接着输入</p><p>咒语：</p><pre><code>npm install hexo-cli -g</code></pre><p><img src="/img/hexoinstall.png" alt=""></p><p>等待自动安装（第一次看到在命令行安装软件，某人兴奋地在宿舍乱叫）</p><p>（npm : 一个叫做 npm 的神奇新世界，是你安装的node.js中的一个“软件下载更新卸载的管理器”，从此下载软件就是一行命令</p><p>install ： install = 安装</p><pre><code>git ： 需要的软件）</code></pre><p>（可能有一天我们可以使用这个来一句 npm install LOL ，好吧……不存在的）</p><p>（输入 hexo -v  可以查看 hexo 的版本，检查是否安装成功 “v” version 版本）</p><p><img src="/img/emmm.png" alt=""></p><p>我们接下来看着这个闪烁的光标</p><p>……</p><p>该怎么做呢</p><p>接着我们需要创建一个放Blog的地方，</p><p>咒语：</p><pre><code>mkdir 新建文件夹的名字</code></pre><p>（例如 mkdir iPhreetom)</p><p>（mkdir = 命令行中的  新建文件夹  命令）</p><p>接着应该可以在桌面看到一个新文件夹了吧</p><p>咒语</p><pre><code>cd 文件夹的名字</code></pre><p>（例如 cd iPhreetom)</p><p>（cd = 命令行中 移动到某一个文件夹）</p><p>（    补充：如果想要退后，有两个方法</p><pre><code>咒语：        cd ..        （返回上一层）咒语：        cd        （返回桌面）         ）</code></pre><p>到达blog的文件夹后，使用</p><p>咒语</p><pre><code>hexo init</code></pre><p>（这就是传说中的    一键搭站  几秒钟初始化了一个模板）</p><p>接着</p><p>咒语：</p><pre><code>npm install</code></pre><p>（这大概是在帮你安装一些组件，没看懂）</p><p>我们预先体验一下自己做出一个网站的快感吧</p><p>咒语：</p><pre><code>hexo -g</code></pre><p>（hexo ： 我们第一个安装的那个 “hexo-cli”的软件，也就是它负责做出了整个网页，以后的大多数操作，就是要使用它来完成）</p><pre><code>（       -g： g = generate = 生成 ， 生成一个本地页面的数据，一会提供我们预览）</code></pre><p>咒语：</p><pre><code>hexo -s</code></pre><p>（    -s ： s = server ，由刚刚generate 生成的数据，产生一个可以访问的网页——）</p><p><img src="/img/hexos.png" alt=""></p><p>复制 或者 手动输入 这个网址</p><p><img src="/img/hexol.png" alt=""></p><p><img src="/img/hexoweb.png" alt=""></p><p>（某人在深夜看到这个页面感动不已……f15 还我周末！）</p><p>-待续……</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为什么都不懂的蒟蒻萌新来到了广阔的大学&lt;/p&gt;
+&lt;p&gt;成日在和自己的无知作斗争&lt;/p&gt;
+&lt;p&gt;某日 被一只沉溺DOTA2的&lt;a href=&quot;https://zhuzeyu22.github.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;fi15&lt;/a&gt;安利一个叫做&lt;strong&gt;&lt;em&gt;hexo+github一天建成blog&lt;/em&gt;&lt;/strong&gt;的神奇方法，于是就愉快的跳进了这个史前巨坑，对，他有句话说对了，首先……你得找对教程。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iPhreetom&#39;s world" scheme="http://iPhreetom.com/categories/iPhreetom-s-world/"/>
+    
+    
+      <category term="blog" scheme="http://iPhreetom.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《如何阅读一本书》</title>
+    <link href="http://iPhreetom.com/2017/11/29/%E3%80%8A%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6%E3%80%8B/"/>
+    <id>http://iPhreetom.com/2017/11/29/《如何阅读一本书》/</id>
+    <published>2017-11-28T22:32:53.000Z</published>
+    <updated>2018-01-28T02:31:25.247Z</updated>
+    
+    <content type="html"><![CDATA[<p>亚马逊评论：<br>一本实用类的书籍应该要说明白两件事<br>说服你去做<br>告诉你怎么做</p><h1 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h1><p>&emsp;&emsp;提高自己在阅读中获得可利用知识的效率（更快的获得有用的信息）<br>&emsp;&emsp;提高自己判断内容是否有益的能力（在阅读后，得出自己的结论）<br>&emsp;&emsp;学会阅读教科书来应对大学考试（在面对一本厚书时，如何学习它）<br>&emsp;&emsp;培养自己的目的性，在无数抉择后，得到自己渴望的宝物。<br>&emsp;&emsp;重新构建“交流”这一个概念<br><a id="more"></a></p><h2 id="阅读的层次"><a href="#阅读的层次" class="headerlink" title="阅读的层次"></a>阅读的层次</h2><pre><code>第一层：基础阅读第二层：检视阅读第三层：分析阅读第四层：主题阅读</code></pre><p>&emsp;&emsp;基础阅读：这个句子在说什么，像似读外国文字，要从认识一个个字，到试着整体理解。<br>&emsp;&emsp;检视阅读：这本书在讲什么，“这本书的结构如何？”，“这本书包含哪些部分？”，不论时间多短，你都可以回答“这是哪一类的书——小说、历史、还是科学论文？”<br>&emsp;&emsp;分析阅读：完整的阅读，接住作者投出的每一个球。同时，对自己所读的东西，提出系统性的问题（套路、模板、方法）<br>&emsp;&emsp;主题阅读：比较，构造框架，发现缺漏。</p><h2 id="阅读的活力与艺术"><a href="#阅读的活力与艺术" class="headerlink" title="阅读的活力与艺术"></a>阅读的活力与艺术</h2><pre><code>定义：阅读为 一种积极主动的状态。</code></pre><p>&emsp;&emsp;积极主动和跃跃欲试是同样的意义，对于文字敏感，不断反驳、思考、联想、总结。</p><pre><code>意义：主动的多少，决定了阅读的效率。通过主动，提升搜索的能力</code></pre><p>&emsp;&emsp;主动寻找的定义：搜索能力。</p><pre><code>比喻：投球者与捕手，专递信息和接受信息</code></pre><p>&emsp;&emsp;有些作者完全知道如何控球，他们完全知道自己要传达的是什么，同时也准确无误的传达出去了。<br>&emsp;&emsp;知道自己想要表达什么，并且准确无误的表达出去</p><h2 id="基础阅读"><a href="#基础阅读" class="headerlink" title="基础阅读"></a>基础阅读</h2><p>&emsp;&emsp;作者生于一个对阅读有着狂热研究的时代<br>&emsp;&emsp;构造这个时代的是几种历史趋势：<br>&emsp;&emsp;1、美国继续推行全民教育，教育的两级化愈加严重<br>&emsp;&emsp;2、阅读教育本身发生了变化<br>&emsp;&emsp;&emsp;&emsp;a、ABC教学法：从字母到音节，不管这样拼出来的单词是否有意义，此法受到了严厉批评，于是发展成为下两种方法。<br>&emsp;&emsp;&emsp;&emsp;b、发音法，从单词到字母<br>&emsp;&emsp;&emsp;&emsp;c、默读法，<br>&emsp;&emsp;这些内容比较适合在思考未来对孩子的教育 和 学习外语时去总结<br>&emsp;&emsp;现在略过去<br>&emsp;&emsp;</p><h2 id="检视阅读"><a href="#检视阅读" class="headerlink" title="检视阅读"></a>检视阅读</h2><pre><code>检视阅读包含了什么？要如何培养检视阅读的能力？</code></pre><p>&emsp;&emsp;检视阅读有两种，本质是一体两面，但是新手最好把它分为两种不同的步骤，两种不同的活动。<br>&emsp;&emsp;</p><h2 id="自我要求的读者"><a href="#自我要求的读者" class="headerlink" title="自我要求的读者"></a>自我要求的读者</h2><p>&emsp;&emsp;读一本书，要根据文章的进行，提出适当的问题<br>&emsp;&emsp;1、这本书的主题是什么？<br>&emsp;&emsp;2、作者在细节中讲了什么，怎么说的？<br>&emsp;&emsp;3、这本书说得有道理么？全部，还是部分？<br>&emsp;&emsp;4、这本书跟我有什么关系？资讯的意义，若是给予启发，那么去找到它给予的建议，以获得更多的启示。<br>&emsp;&emsp;如何能够从书中获得最多的启示（纠正）：（真正拥有一本书！）<br>&emsp;&emsp;电脑前的问题可以成为清晰的讯号：</p><p>&emsp;&emsp;读书做笔记：划线，提问题，<br>&emsp;&emsp;论点的顺序标注<br>&emsp;&emsp;全文的重点架构<br>&emsp;&emsp;整体构架 是在怎么样的，作者借着这个构架如何发展他的观点或者论述他的主题？<br>&emsp;&emsp;<br>&emsp;&emsp;分析阅读的时候，做概念笔记，概念是作者的观点，而随着你对这本书的深度和广度提高后，自己的观点也将会记录在笔记里<br>&emsp;&emsp;<br>&emsp;&emsp;概念笔记和结构笔记是截然不同的<br>&emsp;&emsp;在做主题阅读时，应该就是拥有概念笔记，论点，论题下 标注的不仅仅再是本书的页码，同时也会有其他书的页码<br>&emsp;&emsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;亚马逊评论：&lt;br&gt;一本实用类的书籍应该要说明白两件事&lt;br&gt;说服你去做&lt;br&gt;告诉你怎么做&lt;/p&gt;
+&lt;h1 id=&quot;目的：&quot;&gt;&lt;a href=&quot;#目的：&quot; class=&quot;headerlink&quot; title=&quot;目的：&quot;&gt;&lt;/a&gt;目的：&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;提高自己在阅读中获得可利用知识的效率（更快的获得有用的信息）&lt;br&gt;&amp;emsp;&amp;emsp;提高自己判断内容是否有益的能力（在阅读后，得出自己的结论）&lt;br&gt;&amp;emsp;&amp;emsp;学会阅读教科书来应对大学考试（在面对一本厚书时，如何学习它）&lt;br&gt;&amp;emsp;&amp;emsp;培养自己的目的性，在无数抉择后，得到自己渴望的宝物。&lt;br&gt;&amp;emsp;&amp;emsp;重新构建“交流”这一个概念&lt;br&gt;
+    
+    </summary>
+    
+      <category term="iPhreetom&#39;s world" scheme="http://iPhreetom.com/categories/iPhreetom-s-world/"/>
+    
+    
+      <category term="step-by-step" scheme="http://iPhreetom.com/tags/step-by-step/"/>
+    
+      <category term="think" scheme="http://iPhreetom.com/tags/think/"/>
+    
+      <category term="reading" scheme="http://iPhreetom.com/tags/reading/"/>
+    
+  </entry>
+  
+</feed>

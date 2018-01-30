@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="ACM,step-by-step,递归,数论,汉诺塔,二叉树,搜索,结构体,STL,模拟," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="iPhreetom" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="CODEVS-Silver踩坑指南欢迎加入NOI之争 闲聊：听闻了一个叫做codevs的网站，发现它对萌新很友善其中不得不提的一点是它会给你，测试失败的样例中样例的输入样例的输出你的输出woc……这简直……再也不用对着一道题的两个词Wrong answer（wa）浪费无数脑细胞妈妈再也不用担心我的学习 题目的按照类型分类一个一个题型攻略的快感容易让人上瘾呢让某人忍不住大吼“我热爱学习”……">
+<meta name="keywords" content="ACM,step-by-step,递归,数论,汉诺塔,二叉树,搜索,结构体,STL,模拟">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CODEVS-Silver">
+<meta property="og:url" content="http://iPhreetom.com/2017/12/07/vscode/index.html">
+<meta property="og:site_name" content="iPhreetom">
+<meta property="og:description" content="CODEVS-Silver踩坑指南欢迎加入NOI之争 闲聊：听闻了一个叫做codevs的网站，发现它对萌新很友善其中不得不提的一点是它会给你，测试失败的样例中样例的输入样例的输出你的输出woc……这简直……再也不用对着一道题的两个词Wrong answer（wa）浪费无数脑细胞妈妈再也不用担心我的学习 题目的按照类型分类一个一个题型攻略的快感容易让人上瘾呢让某人忍不住大吼“我热爱学习”……">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-30T07:05:50.594Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CODEVS-Silver">
+<meta name="twitter:description" content="CODEVS-Silver踩坑指南欢迎加入NOI之争 闲聊：听闻了一个叫做codevs的网站，发现它对萌新很友善其中不得不提的一点是它会给你，测试失败的样例中样例的输入样例的输出你的输出woc……这简直……再也不用对着一道题的两个词Wrong answer（wa）浪费无数脑细胞妈妈再也不用担心我的学习 题目的按照类型分类一个一个题型攻略的快感容易让人上瘾呢让某人忍不住大吼“我热爱学习”……">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://iPhreetom.com/2017/12/07/vscode/"/>
+
+
+
+
+
+  <title>CODEVS-Silver | iPhreetom</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iPhreetom</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">追逐阳光与希望</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2017/12/07/vscode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iPhreetom">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iPhreetom">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CODEVS-Silver</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T22:32:53+08:00">
+                2017-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/" itemprop="url" rel="index">
+                    <span itemprop="name">ACM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="CODEVS-Silver踩坑指南"><a href="#CODEVS-Silver踩坑指南" class="headerlink" title="CODEVS-Silver踩坑指南"></a>CODEVS-Silver踩坑指南</h1><p>欢迎加入NOI之争</p>
+<h1 id="闲聊："><a href="#闲聊：" class="headerlink" title="闲聊："></a>闲聊：</h1><p>听闻了一个叫做<a href="http://codevs.cn/" target="_blank" rel="noopener">codevs</a>的网站，发现它对萌新很友善<br>其中不得不提的一点是<br>它会给你，测试失败的样例中<br>样例的输入<br>样例的输出<br>你的输出<br>woc……这简直……再也不用对着一道题的两个词<br>Wrong answer（wa）<br>浪费无数脑细胞<br><del>妈妈再也不用担心我的学习</del></p>
+<p>题目的按照类型分类<br>一个一个题型攻略的快感容易让人上瘾呢<br>让某人忍不住大吼“我热爱学习”……</p>
+<a id="more"></a>
+<p>#笔记</p>
+<h1 id="没有存在感的level-1："><a href="#没有存在感的level-1：" class="headerlink" title="没有存在感的level 1："></a>没有存在感的level 1：</h1><h3 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h3><h5 id="单词反转"><a href="#单词反转" class="headerlink" title="单词反转"></a>单词反转</h5><p>&emsp;&emsp;关于STL的简单运用<br>&emsp;&emsp;使用STL-stack（栈）<br>&emsp;&emsp;使用pop(),push(),top()<br>坑1：注意stack是用top返回可以提出的、顶部的值，而queue使用front()。</p>
+<h1 id="level-2"><a href="#level-2" class="headerlink" title="level 2:"></a>level 2:</h1><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h5 id="————-lt-随机数-gt-："><a href="#————-lt-随机数-gt-：" class="headerlink" title="————&lt;随机数&gt;："></a>————&lt;随机数&gt;：</h5><p>理解：<br>&emsp;&emsp;关于STL的简单运用<br>&emsp;&emsp;set类型，和它的insert操作</p>
+<p>坑1：set不支持下标运算<br>坑2：set的迭代器生成方法：如果不能用auto，那么使用标准的迭代器生成方式</p>
+<pre><code>set&lt;int&gt;::iterator it;
+</code></pre><h5 id="————"><a href="#————" class="headerlink" title="————"></a>————<10^6排序方法></10^6排序方法></h5><p>&emsp;&emsp;桶排序<br>坑1：在数组和计数的地方都是用了n<br>&emsp;计数定义为cn，数组为n<br>&emsp;<br>坑2：数组越界，循环条件多写一个0<br>&emsp;使用define的方法，在头部写一个maxn 记录规模值；<br>坑3：桶排序，输出的是i，而不是数组中的内容。</p>
+<h3 id="模拟"><a href="#模拟" class="headerlink" title="模拟"></a>模拟</h3><h5 id="————-lt-－cantor表-gt"><a href="#————-lt-－cantor表-gt" class="headerlink" title="————&lt;－cantor表&gt;"></a>————&lt;－cantor表&gt;</h5><p>&emsp;&emsp;好的，我们递推计算<br>&emsp;&emsp;计算条件很复杂时，请使用人类易于理解的名词作为bool的变量名<br>&emsp;&emsp;</p>
+<h5 id="————-lt-蛇行走位-gt"><a href="#————-lt-蛇行走位-gt" class="headerlink" title="————&lt;蛇行走位&gt;"></a>————&lt;蛇行走位&gt;</h5><p>&emsp;&emsp;从起点开始认真打表<br>&emsp;&emsp;举个例子规模为3</p>
+<pre><code>每一层都可以看作由三步拓展
+第一步 右or左的顺序前进一格
+第二步 上or下的顺序走len步
+第三步 左or右的顺序走len步
+len是当前构建的规模数-1
+
+做题先找到中点位置，
+</code></pre><p>坑1：审题中说了是奇数，所以不存在问偶数的特殊情况<br>坑2：在宿舍写题目的效率or专注度远不如在自习室，在开发和写OJ时，请移步到自习室，等待电量低后，会宿舍，充电，写纸面作业，or看书（应该可以做到）</p>
+<h3 id="数论入门"><a href="#数论入门" class="headerlink" title="数论入门"></a>数论入门</h3><h5 id="————-lt-素数判断-gt"><a href="#————-lt-素数判断-gt" class="headerlink" title="————&lt;素数判断&gt;"></a>————&lt;素数判断&gt;</h5><p>&emsp;&emsp;从2到 根号n ，历遍求是否能够整除（用%的方法，比用double和int强制转化的方法好）<br>&emsp;&emsp;输出时，注意用“\”转义“\”的规则<br>&emsp;&emsp;<br>&emsp;&emsp;</p>
+<h5 id="————-lt-最小公倍数和最大公约数-gt"><a href="#————-lt-最小公倍数和最大公约数-gt" class="headerlink" title="————&lt;最小公倍数和最大公约数&gt;"></a>————&lt;最小公倍数和最大公约数&gt;</h5><pre><code>求最小公倍数算法：
+最小公倍数=两整数的乘积÷最大公约数
+求最大公约数算法：
+辗转相除法：
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a=i,b=j,c;</span><br><span class="line">			<span class="keyword">while</span>(b!=<span class="number">0</span>)&#123;</span><br><span class="line">				c=a%b;</span><br><span class="line">				a=b;</span><br><span class="line">				b=c;</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="递推"><a href="#递推" class="headerlink" title="递推"></a>递推</h3><h5 id="————-lt-数的计算-gt"><a href="#————-lt-数的计算-gt" class="headerlink" title="————&lt;数的计算&gt;"></a>————&lt;数的计算&gt;</h5><p>&emsp;&emsp;暴力直接把思路穷举出来了<br>&emsp;&emsp;感觉不满意<br>&emsp;&emsp;简化思路，让它能够被自动递推<br>&emsp;&emsp;用逻辑判断加循环（if，else，for）写出自己的框架<br>&emsp;&emsp;然后实现自己的框架</p>
+<pre><code>对于新手，伪代码（思路）很重要
+</code></pre><p>例子：<br>&emsp;&emsp;当a[1] ————&lt;= a[0]/2时<br>&emsp;&emsp;&emsp;&emsp;对于一个位置,在它被+=1后<br>&emsp;&emsp;&emsp;&emsp;如果它小于等于 上一位的一半<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;count++;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;下一位清零;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对下一位执行同样的操作//goto i++;//continue;<br>&emsp;&emsp;&emsp;&emsp;否则，回调上一位//i–;(i-=2;continue;)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;a[<span class="number">1</span>]————&lt;=a[<span class="number">0</span>]/<span class="number">2</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(++a[i]————&lt;=a[i<span class="number">-1</span>]/<span class="number">2</span>)&#123;</span><br><span class="line">			count++;</span><br><span class="line">			a[i+<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">			i-=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="————-1"><a href="#————-1" class="headerlink" title="————"></a>————<fib></fib></h5><p>&emsp;&emsp;递推，用abc表示三个不断相互加和的数字，通过判断项数/3得到的余数，判断后输出abc中一个。<br>&emsp;&emsp;（此方法需要调试，余数和输出关系的判断，是一个坑）</p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><h5 id="————-lt-二叉树的最大宽度和高度-gt"><a href="#————-lt-二叉树的最大宽度和高度-gt" class="headerlink" title="————&lt;二叉树的最大宽度和高度&gt;"></a>————&lt;二叉树的最大宽度和高度&gt;</h5><p>坑0:审视题目传达的意思（俗称审题）</p>
+<pre><code>逻辑，在看明白要干什么了，再动手做。
+篇幅长的题目，逻辑链长的题目，可以使用辅助工具：纸或者电子设备
+在作为新手写题目时，推荐要先 写解题思路、题目要求。
+</code></pre><p>坑1：结构体使用</p>
+<pre><code>（1）结构体变量.成员名。如，stu.num。
+（2）(*p).成员名。如，(*p).num。
+（3）p-&gt;成员名。如，p-&gt;num。
+</code></pre><p>坑2：函数</p>
+<pre><code>return后面的内容将不会被执行
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二叉树递归</span></span><br><span class="line"><span class="keyword">if</span>(T-&gt;num == i)</span><br><span class="line">		<span class="keyword">return</span> T;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;left!=<span class="literal">NULL</span>)</span><br><span class="line">			<span class="keyword">return</span> dfsfind(i,T-&gt;left);</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;right!=<span class="literal">NULL</span>)</span><br><span class="line">			<span class="keyword">return</span> dfsfind(i,T-&gt;right);</span><br><span class="line">	&#125;</span><br><span class="line"><span class="comment">//教科书一般的经典错误，以为else中的return会在left调用完后被调用。</span></span><br></pre></td></tr></table></figure>
+<p>坑3：递归</p>
+<pre><code>理解递归的调用：
+        void类型：在符合条件的时候，赋答案给全局变量
+        有返回值类型：在没有寻找到正确答案的时候：
+                如果不返回东西：编译器帮你返回一个不确定的值
+                上一个if终止条件可以是下一个if起始条件时，返回函数
+返回　即是终结
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">NODE *<span class="title">dfsfind</span><span class="params">(<span class="keyword">int</span> i,NODE *T)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(T-&gt;num == i)&#123;</span><br><span class="line">		<span class="keyword">return</span> T;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;left != <span class="literal">NULL</span>)</span><br><span class="line">			<span class="keyword">if</span>(dfsfind(i,T-&gt;left)!=<span class="literal">NULL</span>)<span class="keyword">return</span> dfsfind(i,T-&gt;left);</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;right != <span class="literal">NULL</span>)</span><br><span class="line">			<span class="keyword">if</span>(dfsfind(i,T-&gt;right)!=<span class="literal">NULL</span>)<span class="keyword">return</span> dfsfind(i,T-&gt;right);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>坑4：初始化</p>
+<pre><code>不要信任编译器！
+不要信任编译器！
+不要信任编译器！
+这句话很重要
+有些人告诉我们：定义在全局变量区域的int变量，int数组会被初始化全部为0，有些人告诉我们：int a[10]={0};可以把a中的变量全部初始化为0；
+有人……
+是，没错，在绝大多数情况下，这些事情都没错
+但是，有时候，编译器抽风了，和你说，它就是没有被初始化……
+如果你想要搞明白在怎么回事：
+    --&gt; baidu，google
+    --&gt; 学会汇编，多看文档
+</code></pre><p>坑5（编译器察觉）：顺序</p>
+<pre><code>结构体下面才能够使用结构体去，定义函数，定义变量
+</code></pre><p>坑6：大幅改写</p>
+<pre><code>突然发现一个功能需要被重复多次，试着改写把某一大部分改写成一个函数
+    变量的作用域（相互关联）容易搞错
+极力不推荐把主函数的某部分突然改写成一个函数结构
+耗费大量时间
+但是一开始全部使用全局变量
+之后就可以随便写void函数啦
+（ACM经验之谈）
+</code></pre><p>坑7：引用</p>
+<pre><code>代码的核心是：
+    new NODE();需要使用指针
+    NODE{...NODE　*left;...}
+引用与这两个核心是不兼容的
+</code></pre><h5 id="————-lt-简单递归-gt"><a href="#————-lt-简单递归-gt" class="headerlink" title="————&lt;简单递归&gt;"></a>————&lt;简单递归&gt;</h5><p>&emsp;&emsp;emmmmm，这个很简单的啦。<br>&emsp;&emsp;规定 结束条件<br>&emsp;&emsp;其他情况 返回自身<br>&emsp;&emsp;</p>
+<h5 id="————-2"><a href="#————-2" class="headerlink" title="————"></a>————<3n+1></3n+1></h5><p>&emsp;&emsp;递归理解：</p>
+<pre><code>…… return f();
+相当于把f()的返回值 拿来当作自己的返回值。
+</code></pre><p>所以最深处的返回值就是真实的返回值<br>可以把它比作一条笔直的递归链（形象的词，不准确），从尾返回到头</p>
+<pre><code>……return f(---) + f(---)
+</code></pre><p>则是把两个函数的值合起来当作自己的返回值：<br>可以把它比作 一个从顶点向下拓展的三角形<br>先把建造整个三角形，然后从最下一层开始向上收缩。<br>（思考一下：是否存在重复计算）</p>
+<h5 id="————-lt-二叉树的先中后历遍-gt"><a href="#————-lt-二叉树的先中后历遍-gt" class="headerlink" title="————&lt;二叉树的先中后历遍&gt;"></a>————&lt;二叉树的先中后历遍&gt;</h5><p>&emsp;&emsp;二叉树的基本操作<br>&emsp;&emsp;<br>坑1：</p>
+<pre><code>struct A的构造函数写作
+A(参数，参数):ver(值)....{} ;
+    参数：可以为空
+    值：
+        空
+        参数
+        默认常量（数值，NULL，字符）
+使用时：
+A = new A(参数，参数);
+相当于调用了构造函数
+    构造函数在定义 n维向量的点时，相当形象
+        EX: p(x,y,z);
+函数后就该跟着一个{}，因为构造函数没有实际内容，这个括号容易被遗漏
+</code></pre><h5 id="————-lt-罗汉塔-gt"><a href="#————-lt-罗汉塔-gt" class="headerlink" title="————&lt;罗汉塔&gt;"></a>————&lt;罗汉塔&gt;</h5><p>罗汉塔，要把所有需要用到的变量赋予意义，。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">move</span><span class="params">(<span class="keyword">int</span> num,<span class="keyword">char</span> from,<span class="keyword">char</span> by,<span class="keyword">char</span> to)</span></span></span><br></pre></td></tr></table></figure></p>
+<p>简而言之：</p>
+<pre><code>void在理解递归时更加方便，递归时，不用再去纠结返回什么值，而是直接思考递归本身，用人类的思维理解。
+</code></pre><h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><h5 id="水题两道"><a href="#水题两道" class="headerlink" title="水题两道"></a>水题两道</h5><p>&emsp;&emsp;方法：<br>&emsp;&emsp;char 和 int 的转换<br>&emsp;&emsp;&emsp;&emsp;1&gt; (‘a’ &lt;= c &amp;&amp; c &gt;= ‘z’)<br>&emsp;&emsp;&emsp;&emsp;2&gt; (num = c - ‘0’) 或者 (num = c - ‘A’)</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ACM/" rel="tag"># ACM</a>
+          
+            <a href="/tags/step-by-step/" rel="tag"># step-by-step</a>
+          
+            <a href="/tags/递归/" rel="tag"># 递归</a>
+          
+            <a href="/tags/数论/" rel="tag"># 数论</a>
+          
+            <a href="/tags/汉诺塔/" rel="tag"># 汉诺塔</a>
+          
+            <a href="/tags/二叉树/" rel="tag"># 二叉树</a>
+          
+            <a href="/tags/搜索/" rel="tag"># 搜索</a>
+          
+            <a href="/tags/结构体/" rel="tag"># 结构体</a>
+          
+            <a href="/tags/STL/" rel="tag"># STL</a>
+          
+            <a href="/tags/模拟/" rel="tag"># 模拟</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/29/萌新的blog之旅/" rel="next" title="萌新的blog之旅">
+                <i class="fa fa-chevron-left"></i> 萌新的blog之旅
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/10/vscode——gold/" rel="prev" title="CODEVS-Gold贪心">
+                CODEVS-Gold贪心 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="iPhreetom" />
+            
+              <p class="site-author-name" itemprop="name">iPhreetom</p>
+              <p class="site-description motion-element" itemprop="description">ACMer·Bigdate·Html·Painter</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CODEVS-Silver踩坑指南"><span class="nav-number">1.</span> <span class="nav-text">CODEVS-Silver踩坑指南</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闲聊："><span class="nav-number">2.</span> <span class="nav-text">闲聊：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#没有存在感的level-1："><span class="nav-number">3.</span> <span class="nav-text">没有存在感的level 1：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串处理"><span class="nav-number">3.0.1.</span> <span class="nav-text">字符串处理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#单词反转"><span class="nav-number">3.0.1.0.1.</span> <span class="nav-text">单词反转</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#level-2"><span class="nav-number">4.</span> <span class="nav-text">level 2:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#排序"><span class="nav-number">4.0.1.</span> <span class="nav-text">排序</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-随机数-gt-："><span class="nav-number">4.0.1.0.1.</span> <span class="nav-text">————&lt;随机数&gt;：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————"><span class="nav-number">4.0.1.0.2.</span> <span class="nav-text">————</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模拟"><span class="nav-number">4.0.2.</span> <span class="nav-text">模拟</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-－cantor表-gt"><span class="nav-number">4.0.2.0.1.</span> <span class="nav-text">————&lt;－cantor表&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-蛇行走位-gt"><span class="nav-number">4.0.2.0.2.</span> <span class="nav-text">————&lt;蛇行走位&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数论入门"><span class="nav-number">4.0.3.</span> <span class="nav-text">数论入门</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-素数判断-gt"><span class="nav-number">4.0.3.0.1.</span> <span class="nav-text">————&lt;素数判断&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-最小公倍数和最大公约数-gt"><span class="nav-number">4.0.3.0.2.</span> <span class="nav-text">————&lt;最小公倍数和最大公约数&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递推"><span class="nav-number">4.0.4.</span> <span class="nav-text">递推</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-数的计算-gt"><span class="nav-number">4.0.4.0.1.</span> <span class="nav-text">————&lt;数的计算&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-1"><span class="nav-number">4.0.4.0.2.</span> <span class="nav-text">————</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递归"><span class="nav-number">4.0.5.</span> <span class="nav-text">递归</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-二叉树的最大宽度和高度-gt"><span class="nav-number">4.0.5.0.1.</span> <span class="nav-text">————&lt;二叉树的最大宽度和高度&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-简单递归-gt"><span class="nav-number">4.0.5.0.2.</span> <span class="nav-text">————&lt;简单递归&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-2"><span class="nav-number">4.0.5.0.3.</span> <span class="nav-text">————</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-二叉树的先中后历遍-gt"><span class="nav-number">4.0.5.0.4.</span> <span class="nav-text">————&lt;二叉树的先中后历遍&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-罗汉塔-gt"><span class="nav-number">4.0.5.0.5.</span> <span class="nav-text">————&lt;罗汉塔&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进制转换"><span class="nav-number">4.0.6.</span> <span class="nav-text">进制转换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#水题两道"><span class="nav-number">4.0.6.0.1.</span> <span class="nav-text">水题两道</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <a class="theme-link" href="/about/index.html">
+  <span class="author" itemprop="copyrightHolder">iPhreetom</span>
+</a>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
