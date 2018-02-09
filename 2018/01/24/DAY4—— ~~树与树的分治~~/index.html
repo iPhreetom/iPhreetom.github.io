@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ACM,step-by-step,贪心," />
+  <meta name="keywords" content="寒训," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="CODEVS-Gold贪心欢迎加入NOI之争">
-<meta name="keywords" content="ACM,step-by-step,贪心">
+<meta name="description" content="树的分治数据结构： 树、堆">
+<meta name="keywords" content="寒训">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CODEVS-Gold贪心">
-<meta property="og:url" content="http://iPhreetom.com/2017/12/10/vscode——gold/index.html">
+<meta property="og:title" content="DAY4——数据结构基础">
+<meta property="og:url" content="http://iPhreetom.com/2018/01/24/DAY4—— ~~树与树的分治~~/index.html">
 <meta property="og:site_name" content="iPhreetom">
-<meta property="og:description" content="CODEVS-Gold贪心欢迎加入NOI之争">
+<meta property="og:description" content="树的分治数据结构： 树、堆">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-30T07:05:53.679Z">
+<meta property="og:updated_time" content="2018-02-09T00:22:43.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CODEVS-Gold贪心">
-<meta name="twitter:description" content="CODEVS-Gold贪心欢迎加入NOI之争">
+<meta name="twitter:title" content="DAY4——数据结构基础">
+<meta name="twitter:description" content="树的分治数据结构： 树、堆">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://iPhreetom.com/2017/12/10/vscode——gold/"/>
+  <link rel="canonical" href="http://iPhreetom.com/2018/01/24/DAY4—— ~~树与树的分治~~/"/>
 
 
 
 
 
-  <title>CODEVS-Gold贪心 | iPhreetom</title>
+  <title>DAY4——数据结构基础 | iPhreetom</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2017/12/10/vscode——gold/">
+    <link itemprop="mainEntityOfPage" href="http://iPhreetom.com/2018/01/24/DAY4—— ~~树与树的分治~~/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="iPhreetom">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CODEVS-Gold贪心</h1>
+          <h1 class="post-title" itemprop="name headline">DAY4——数据结构基础</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-10T07:32:53+08:00">
-                2017-12-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T22:32:53+08:00">
+                2018-01-24
               </time>
             
 
@@ -354,17 +354,95 @@
       
 
       
-        <h1 id="CODEVS-Gold贪心"><a href="#CODEVS-Gold贪心" class="headerlink" title="CODEVS-Gold贪心"></a>CODEVS-Gold贪心</h1><p>欢迎加入NOI之争</p>
-<a id="more"></a>
-<p>#笔记</p>
-<h1 id="level-3"><a href="#level-3" class="headerlink" title="level 3"></a>level 3</h1><h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><h5 id="————-lt-均分纸牌-gt"><a href="#————-lt-均分纸牌-gt" class="headerlink" title="————&lt;均分纸牌&gt;"></a>————&lt;均分纸牌&gt;</h5><pre><code>贪心：在每种情况下都选择当前最优解。
-</code></pre><p>&emsp;&emsp;对于本题，思想类似于：&lt;括号匹配&gt;，利用不断解决边界的当前子问题，来解决全部问题；<br>&emsp;&emsp;类似于：&lt;……插入排序、冒泡排序……&gt;<br>&emsp;&emsp;&emsp;&emsp;和它们相似的地方是都使用了一种思想：历遍数组时，历遍过的一段是“排序（分配）”好的。<br>&emsp;&emsp;&emsp;&emsp;</p>
-<h5 id="————-lt-线段覆盖-gt"><a href="#————-lt-线段覆盖-gt" class="headerlink" title="————&lt;线段覆盖&gt;"></a>————&lt;线段覆盖&gt;</h5><pre><code>时间流失警示：
-分析，不要莽撞的写题目。
-当分析不出来的时候，查阅当前题型在《算法竞赛入门经典》中找到对应章节。
-</code></pre><p>在使用贪心法解决问题时，我们总希望 数据是排序过的<br>有着最大，最小等，表示极限的端点<br>通过不断解决边界上的问题，最终解决整体问题。</p>
-<p>本题通过把右边的边界排序后<br>对左边界进行选择<br>第一步最重要：<br>我们选择排序后得到的第一个线段，<br>    （我们只需要确定第一个线段的右边界是最靠左的右边界，而第一个线段的左边界在哪里我们并不关心，因为它不会影响后续的抉择。）<br>用一个变量贮存 右边界的值<br>通过继续历遍左边界（+=2），判断是否现在的左边界大于等于储存的右边界。<br>    如果大于等于，那么右边界 换做当前线段的右边界。<br>    如果不是，“删除”当前线段。</p>
-<h3 id="高精度"><a href="#高精度" class="headerlink" title="高精度"></a>高精度</h3><p>当然，就算是刚学会数组的人都可以实现一个高精度的加法。<br>但是，想要让它能够像int类型一样的加减，我们需要用到struct的特性来实现它<br>对……<br>我们需要学习<br>1、C++ 结构体的构造函数<br>2、给结构体重载运算符</p>
+        <p><del>树的分治</del><br>数据结构： 树、堆<br><a id="more"></a></p>
+<h1 id="树和二叉树"><a href="#树和二叉树" class="headerlink" title="树和二叉树"></a>树和二叉树</h1><ul>
+<li>基础知识<ul>
+<li>利用数组建立二叉树</li>
+<li>利用结构体建立二叉树<ul>
+<li>二叉树的三种历遍方式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="优先队列和堆"><a href="#优先队列和堆" class="headerlink" title="优先队列和堆"></a>优先队列和堆</h1><h2 id="优先队列-queue-proiority-queue"><a href="#优先队列-queue-proiority-queue" class="headerlink" title="优先队列(#queue : proiority_queue)"></a>优先队列(#queue : proiority_queue)</h2><pre><code>- 操作：
+    - 能插入一个数值
+    - 取出最小（最大）的数值（取得并删除）
+- 实现：
+    - 二叉堆实现法
+</code></pre><h2 id="二叉堆"><a href="#二叉堆" class="headerlink" title="二叉堆"></a>二叉堆</h2><pre><code>- 性质：
+    - 儿子的值 一定大于等于 父亲的值
+    - 要求树的节点从上到下，从左到右顺序紧凑排列
+- 操作：
+    - 能插入一个数值
+    - 取出最小（最大）的数值（取得并删除）
+- 实现：
+    - 利用数组表示二叉树
+    - 左儿子的编号 是 自己编号×2+1
+    - 右儿子的编号 是 自己编号×2+2
+- 用途：
+    - 实现优先队列：
+        - 插入一个数值
+            - i = size++;
+            - dad = (i-1)/2
+            - 不断向上提升，直到其父亲节点比它小为止
+                - if(heap[dad] &lt;= x )break
+                - else heap[i] = heap[dad] ，i=dad //将父亲节点放下来，而插入值储实际存在变量x中
+            - 真正插入数组
+                - heap[i] = x
+        - 取出最小值（实际上就是更新一次堆）
+            - 用变量ret保存最小值
+            - 堆尾的值赋给根，并且用--size，表示删除
+            - 从根开始向下交换
+                - 比较儿子的值，贪心找小的一个
+                - 如果 儿子都 大于该值，就结束
+                - 否则把儿子提上来
+                - 返回ret
+</code></pre><h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><pre><code>- 性质
+    - 左子树的节点都比自己小
+    - 右子树的节点都比自己大
+- 操作：
+    - 插入一个数值
+        - 通过 询问（性质） 找到对应位置，插入
+    - 查询是否包含某个数值
+    - 删除某个数值
+        - 需要删除的节点没有左儿子，那么就把右儿子提上去
+        - 需要删除的节点的左儿子没有右儿子，呢么就把左儿子提上去
+        - 两种特列不满足，就把左儿子中最大的节点提到需要删除的节点上
+- 实现：
+    - 用结构体实现
+</code></pre><h2 id="二叉堆代码实现："><a href="#二叉堆代码实现：" class="headerlink" title="二叉堆代码实现："></a>二叉堆代码实现：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> heap[maxn],sz;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = sz++;</span><br><span class="line">	<span class="keyword">int</span> p = (i<span class="number">-1</span>)/<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">while</span>(i&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(heap[p] &lt;= x)<span class="keyword">break</span>;</span><br><span class="line">		heap[i] = heap[p];</span><br><span class="line">		i = p;</span><br><span class="line">	&#125;</span><br><span class="line">	heap[i] = x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = heap[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">int</span> x = heap[--sz];</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(i*<span class="number">2</span>+<span class="number">1</span> &lt; sz)&#123;</span><br><span class="line">		<span class="keyword">int</span> a = i*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">int</span> b = i*<span class="number">2</span>+<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(b&lt;sz &amp;&amp; heap[b] &lt; heap[a])a = b;</span><br><span class="line">		<span class="keyword">if</span>(heap[a] &lt; heap[i])heap[i] = heap[a] , i = a;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	heap[i] = x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="对应习题："><a href="#对应习题：" class="headerlink" title="对应习题："></a>对应习题：</h2><p>POJ 2431 Expedition<br>POJ 3253 Fence Repair</p>
+<h2 id="补习："><a href="#补习：" class="headerlink" title="补习："></a>补习：</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 用O(n)求得 最小值和第二小值<ul>
+<li>mii1 和 mii2</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 使用priority_queue实现堆的方法，push(),pop(),top()<ul>
+<li>默认top(),pop()取出和删除最小值</li>
+<li>取出最大值的方法：priority_queue&lt; int,vector&lt; int&gt;,greater&lt; int&gt; &gt;<ul>
+<li>greater&lt;&gt; and less&lt;&gt;属于 #functional</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><h3 id="POJ-2431-Expedition"><a href="#POJ-2431-Expedition" class="headerlink" title="POJ 2431 Expedition"></a>POJ 2431 Expedition</h3><p>移动方法：不断移动到一个新的加油站（把终点也当作一个加油站，简易计算）<br>优先队列：当没有油时，加上队列中最大的油桶（取出最大值操作）</p>
+<h3 id="POJ-3253-Fence-Repair"><a href="#POJ-3253-Fence-Repair" class="headerlink" title="POJ 3253 Fence Repair"></a>POJ 3253 Fence Repair</h3><p>最小代价：取出最小的两个物件合并</p>
+<h1 id="树上的分治"><a href="#树上的分治" class="headerlink" title="树上的分治"></a><del>树上的分治</del></h1><ul>
+<li>点分治<ul>
+<li>选点的方法不同，导致每个点被历遍次数不同</li>
+<li>选点的方法；<ul>
+<li>寻找“重心”：使得 最大值 最小</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>边分治<ul>
+<li>xxx</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -382,11 +460,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ACM/" rel="tag"># ACM</a>
-          
-            <a href="/tags/step-by-step/" rel="tag"># step-by-step</a>
-          
-            <a href="/tags/贪心/" rel="tag"># 贪心</a>
+            <a href="/tags/寒训/" rel="tag"># 寒训</a>
           
         </div>
       
@@ -399,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/07/vscode/" rel="next" title="CODEVS-Silver">
-                <i class="fa fa-chevron-left"></i> CODEVS-Silver
+              <a href="/2018/01/23/DAY3——博弈SG/" rel="next" title="DAY3组合博弈">
+                <i class="fa fa-chevron-left"></i> DAY3组合博弈
               </a>
             
           </div>
@@ -409,8 +483,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/20/CSS/" rel="prev" title="CSS基础知识">
-                CSS基础知识 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/25/DAY6——树链剖分——  0 复习前面所学/" rel="prev" title="DAY6——树链剖分 -> 复习前面所学">
+                DAY6——树链剖分 -> 复习前面所学 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -554,7 +628,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CODEVS-Gold贪心"><span class="nav-number">1.</span> <span class="nav-text">CODEVS-Gold贪心</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#level-3"><span class="nav-number">2.</span> <span class="nav-text">level 3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#贪心"><span class="nav-number">2.0.1.</span> <span class="nav-text">贪心</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-均分纸牌-gt"><span class="nav-number">2.0.1.0.1.</span> <span class="nav-text">————&lt;均分纸牌&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#————-lt-线段覆盖-gt"><span class="nav-number">2.0.1.0.2.</span> <span class="nav-text">————&lt;线段覆盖&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高精度"><span class="nav-number">2.0.2.</span> <span class="nav-text">高精度</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#树和二叉树"><span class="nav-number">1.</span> <span class="nav-text">树和二叉树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优先队列和堆"><span class="nav-number">2.</span> <span class="nav-text">优先队列和堆</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优先队列-queue-proiority-queue"><span class="nav-number">2.1.</span> <span class="nav-text">优先队列(#queue : proiority_queue)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉堆"><span class="nav-number">2.2.</span> <span class="nav-text">二叉堆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉搜索树"><span class="nav-number">2.3.</span> <span class="nav-text">二叉搜索树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二叉堆代码实现："><span class="nav-number">2.4.</span> <span class="nav-text">二叉堆代码实现：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应习题："><span class="nav-number">2.5.</span> <span class="nav-text">对应习题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补习："><span class="nav-number">2.6.</span> <span class="nav-text">补习：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解："><span class="nav-number">2.7.</span> <span class="nav-text">题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POJ-2431-Expedition"><span class="nav-number">2.7.1.</span> <span class="nav-text">POJ 2431 Expedition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POJ-3253-Fence-Repair"><span class="nav-number">2.7.2.</span> <span class="nav-text">POJ 3253 Fence Repair</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#树上的分治"><span class="nav-number">3.</span> <span class="nav-text">树上的分治</span></a></li></ol></div>
             
 
           </div>
